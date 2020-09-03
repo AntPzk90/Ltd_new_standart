@@ -78,7 +78,7 @@ gulp.task('scripts', () => {
   //Всей файлы по шаблону './src/js/**/*.js'
   return gulp.src(scriptFiles)
     // Объединение файлов в один
-    .pipe(concat('script.js'))
+    // .pipe(concat('script.js'))
     //Минификация JS
     // .pipe(uglify({
     //   toplevel: false
@@ -147,7 +147,9 @@ gulp.task('svg-sprite', function () {
 gulp.task("copy", function () {
   return gulp.src([
     'src/fonts/**/*',
-    'src/bootstrap-4.2.1/**/*'
+    'src/bootstrap-4.2.1/**/*',
+    'src/select2/**/*',
+    'src/js/**/*',
   ], {
     base: "src"
   })

@@ -1,0 +1,149 @@
+.present {
+  padding-top: 30px;
+}
+
+.present__slogan {
+  font-family: @inter;
+}
+
+.present__form-wrapper {
+  background-color: @white;
+  padding: 23px;
+  border-radius: 4px;
+}
+
+.present__form {
+
+}
+
+.present__form-btn-close {
+  display: none;
+}
+
+.present__form--active {
+  padding-top: 20px;
+  margin-top: -245px;
+  background-color: @white;
+  position: relative;
+  z-index: 2;
+  width: calc(100% + 80px);
+  margin-left: -40px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+
+  .present__form-title {
+    display: none;
+  }
+
+  .present__form-select,
+  .present__text-input {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .present__fieldset--weight {
+    .present__form-wrapper-inner {
+      display: flex;
+      justify-content: space-between;
+
+      .present__text-input {
+        width: 48%;
+      }
+    }
+  }
+
+  .present__form-btn-reset {
+    position: absolute;
+    top: 22px;
+    right: 15px;
+    font-size: 0;
+    border: none;
+    padding-right: 0;
+
+    &::after {
+      content: "Сбросить";
+      font-size: 12px;
+      line-height: 20px;
+    }
+  }
+
+  .present__form-btn-close {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    color: @brown;
+    position: absolute;
+    top: 22px;
+    left: 15px;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.present__form-mobile-title {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  font-family: @bellota;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+
+.present__form-title {
+  position: relative;
+  display: block;
+  font-size: 20px;
+  font-family: @bellota;
+  line-height: 29px;
+  padding-left: 30px;
+
+  &::after {
+    content: "";
+    width: 23px;
+    height: 35px;
+    display: block;
+    background-image: url("../img/present-form-title-icon.png");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.present__form-filter-mobile-btn {
+  display: block;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid @brown;
+  font-weight: 700;
+  margin-right: 20px;
+  color: @brown;
+  padding: 9px 14px;
+  margin-bottom: 20px;
+  background-color: transparent;
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 8px;
+    left: 6%;
+    background-image: url("../img/filters-icon.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+  }
+}
+
+.present__form-btn-submit {
+  width: 100%;
+  max-width: 100%;
+}
