@@ -463,6 +463,22 @@ a {
   padding: 23px;
   border-radius: 4px;
 }
+.present__form .select2 {
+  display: none;
+}
+.present__form .present__text-input {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 10px;
+}
+.present__form .present__fieldset--weight .present__text-input {
+  display: none;
+  width: 100%;
+  max-width: 100%;
+}
+.present__form-btn-reset {
+  display: none;
+}
 .present__form-btn-close {
   display: none;
 }
@@ -478,14 +494,29 @@ a {
   padding-right: 15px;
   padding-bottom: 20px;
 }
+.present__form--active .select2 {
+  display: block;
+  width: 100% !important;
+}
 .present__form--active .present__form-title {
   display: none;
+}
+.present__form--active .present__form-mobile-title {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  font-family: "Bellota Text", cursive;
+  line-height: 29px;
+  margin-bottom: 20px;
 }
 .present__form--active .present__form-select,
 .present__form--active .present__text-input {
   width: 100%;
   max-width: 100%;
   margin-bottom: 10px;
+}
+.present__form--active .present__fieldset--weight .present__text-input {
+  display: block;
 }
 .present__form--active .present__fieldset--weight .present__form-wrapper-inner {
   display: -webkit-box;
@@ -499,6 +530,7 @@ a {
   width: 48%;
 }
 .present__form--active .present__form-btn-reset {
+  display: block;
   position: absolute;
   top: 22px;
   right: 15px;
@@ -524,12 +556,7 @@ a {
   background-color: transparent;
 }
 .present__form-mobile-title {
-  text-align: center;
-  display: block;
-  font-size: 20px;
-  font-family: "Bellota Text", cursive;
-  line-height: 29px;
-  margin-bottom: 20px;
+  display: none;
 }
 .present__form-title {
   position: relative;
@@ -537,7 +564,10 @@ a {
   font-size: 20px;
   font-family: "Bellota Text", cursive;
   line-height: 29px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   padding-left: 30px;
+  margin-bottom: 10px;
 }
 .present__form-title::after {
   content: "";
@@ -561,7 +591,7 @@ a {
   margin-right: 20px;
   color: #c1bd98;
   padding: 9px 14px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   background-color: transparent;
   position: relative;
 }
