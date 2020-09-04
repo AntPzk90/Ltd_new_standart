@@ -1,0 +1,218 @@
+.result-item {
+  border: @border-color;
+  border-radius: 4px;
+  background-color: @white;
+  padding: 20px 15px;
+  margin-bottom: 20px;
+}
+
+.result-item__number {
+  font-size: 20px;
+  font-family: @bellota;
+  font-weight: bold;
+  line-height: 29px;
+  color: @brown;
+  margin: 0;
+
+  &::before {
+    content: "№ ";
+  }
+}
+
+.result-item__title {
+  font-size: 20px;
+  font-family: @bellota;
+  font-weight: bold;
+  line-height: 29px;
+  color: @black;
+  margin-bottom: 10px;
+}
+
+.result-item__price-wrapper {
+  border-bottom: 1px solid @border-color;
+  padding-bottom: 28px;
+}
+
+.result-item__price {}
+
+.result-item__price-txt {
+  color: @medium-gray;
+  margin-right: 10px;
+}
+
+.result-item__price-amount {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 29px;
+  color: @black;
+}
+
+.result-item__price-amount--rub {
+  &::after {
+    content: " \20BD";
+  }
+}
+
+.result-item__bottom-wrapper {
+  .result-item__inner-wrapper {
+    border-bottom: 1px solid @border-color;
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+
+  .result-item__inner-wrapper:nth-child(2) {
+    border-bottom: 0;
+  }
+}
+
+
+.result-item__location-wrapper {
+  padding-left: 20px;
+  position: relative;
+}
+
+.result-item__icons {
+  width: 10px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  padding-bottom: 20px;
+
+  &::before {
+    content: "";
+    width: 10px;
+    height: 15px;
+    display: block;
+    background-image: url("../img/location-point-icon.png");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30px;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    width: 10px;
+    height: 15px;
+    display: block;
+    background-image: url("../img/location-point-icon.png");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 7px;
+    left: 0;
+  }
+}
+
+.result-item__decor {
+  height: 86%;
+  width: 2px;
+  background-color: @gray;
+  left: 4px;
+  margin: 0 auto;
+}
+
+.result-item__town-wrapper {
+  margin-bottom: 10px;
+}
+
+.result-item__date {
+  font-size: 12px;
+  color: @medium-gray;
+}
+
+.result-item__town {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: @bellota;
+  line-height: 29px;
+  margin-right: 10px;
+  color: @black;
+}
+
+.result-item__region {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: @bellota;
+  line-height: 29px;
+  color: @medium-gray;
+}
+
+.result-item__car-count-wrapper {}
+
+//
+
+.result-item__customer {
+  display: flex;
+}
+
+.result-item__customer-icon {
+  display: none;
+}
+
+.result-item__customer-txt {
+  font-size: 12px;
+  color: @medium-gray;
+}
+
+.result-item__customer-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: @bellota;
+  line-height: 29px;
+  color: @black;
+}
+
+.result-item__payment {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.result-item__payment-icon {
+  display: none;
+}
+
+.result-item__payment-txt {
+  font-size: 12px;
+  color: @medium-gray;
+}
+
+.result-item__payment-date {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: @bellota;
+  line-height: 29px;
+  color: @black;
+}
+
+.result-item__chat {
+  color: @brown;
+}
+
+.result-item__btn {
+  width: 100%;
+  max-width: 100%;
+
+  .result-item__btn-bargain {
+    display: none;
+  }
+}
+
+.result-item__btn--no-bargain {
+  .result-item__btn-bargain {
+    display: block;
+  }
+
+  .result-item__btn-no-bargain {
+    display: none;
+  }
+}

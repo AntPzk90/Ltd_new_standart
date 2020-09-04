@@ -2,6 +2,10 @@
   padding-top: 30px;
 }
 
+.present__wrapper {
+  margin-bottom: 80px;
+}
+
 .present__slogan {
   font-family: @inter;
 }
@@ -41,8 +45,9 @@
 }
 
 .present__form--active {
+  position: absolute;
   padding-top: 20px;
-  margin-top: -245px;
+  margin-top: -432px;
   background-color: @white;
   position: relative;
   z-index: 2;
@@ -136,6 +141,7 @@
   padding-bottom: 3px;
   padding-left: 30px;
   margin-bottom: 10px;
+  color: @black;
 
   &::after {
     content: "";
@@ -183,4 +189,32 @@
 .present__form-btn-submit {
   width: 100%;
   max-width: 100%;
+}
+
+// slider
+
+.present__slider-wrapper {
+  padding-top: 5px;
+  padding-bottom: 15px;
+  border-radius: 3px;
+  margin-bottom: 20px;
+
+  .slick-dots {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+
+    button {
+      font-size: 0;
+      border: none;
+      width: 30px;
+      height: 3px;
+      background-color: @light-gray;
+    }
+
+    .slick-active button {
+      background-color: @brown;
+    }
+  }
 }

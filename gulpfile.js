@@ -149,6 +149,7 @@ gulp.task("copy", function () {
     'src/fonts/**/*',
     'src/bootstrap-4.2.1/**/*',
     'src/select2/**/*',
+    'src/slick/**/*',
     'src/js/**/*',
   ], {
     base: "src"
