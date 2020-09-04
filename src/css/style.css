@@ -284,17 +284,26 @@ a {
 }
 .header__user--logged .header__logged-block {
   display: block;
-  border-bottom: 1px solid #d9d8d4;
 }
 .header__user--logged .header__user-list {
   display: none!important;
 }
 .header__user--logged .header__logged-icon {
   position: absolute;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid #c1bd98;
   top: 9px;
   right: 55px;
   -webkit-animation: scale 0.3s;
   animation: scale 0.3s;
+}
+.header__user--logged .header__logged-icon-img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 .header__user--logged .header__logged-name {
   display: none;
@@ -303,7 +312,17 @@ a {
   color: #76746e;
   padding-top: 20px;
   padding-bottom: 15px;
-  border-bottom: 1px solid #d9d8d4;
+  position: relative;
+}
+.header__user--logged .header__logged-name::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #d9d8d4;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .header__user--logged .header__logged-list {
   display: none;
@@ -941,12 +960,28 @@ a {
   width: 170px;
   margin-left: auto;
 }
+.select2-container--default {
+  margin-bottom: 0;
+  background-color: #ffffff;
+}
+.select2-container--default .select2-selection--single {
+  border: 1px solid #d9d8d4;
+  height: 28px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  height: 28px;
+  padding-top: 0;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 0;
+}
 .pagination__select {
   padding: 5px;
   border: 1px solid #d9d8d4;
   border-radius: 4px;
   background-color: #ffffff;
   position: relative;
+  margin-bottom: 0;
 }
 .pagination__select::after {
   content: "";
@@ -974,6 +1009,7 @@ a {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  margin-bottom: 25px;
 }
 .footer__logo-img {
   margin-bottom: 10px;
@@ -983,6 +1019,12 @@ a {
   font-family: "Bellota Text", cursive;
   line-height: 29px;
   color: #23211d;
+}
+.footer__list-item {
+  margin-bottom: 15px;
+}
+.footer__list-link {
+  color: #76746e;
 }
 .footer__wrapper-inner:nth-child(1) .footer__rkn-logo {
   display: none;
