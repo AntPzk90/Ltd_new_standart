@@ -4,6 +4,44 @@
   background-color: @white;
   padding: 20px 15px;
   margin-bottom: 20px;
+  position: relative;
+}
+
+.result-item__favorite {
+  position: absolute;
+  display: block;
+  top: 24px;
+  right: 30px;
+
+  &::after {
+    content: "";
+    width: 15px;
+    height: 14px;
+    display: block;
+    background-image: url("../img/favorite-icon.png");
+    background-size: 15px 14px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.result-item__favorite--active {
+  &::after {
+    content: "";
+    width: 15px;
+    height: 14px;
+    display: block;
+    background-image: url("../img/favorite-icon-active.png");
+    background-size: 15px 14px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .result-item__number {
@@ -201,6 +239,7 @@
 .result-item__btn {
   width: 100%;
   max-width: 100%;
+  position: relative;
 
   .result-item__btn-bargain {
     display: none;
@@ -208,6 +247,20 @@
 }
 
 .result-item__btn--no-bargain {
+  &::after {
+    content: "";
+    width: 10px;
+    height: 11px;
+    display: block;
+    background-image: url("../img/btn-arrow-down-icon.png");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 30%;
+  }
+
   .result-item__btn-bargain {
     display: block;
   }
