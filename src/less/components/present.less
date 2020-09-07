@@ -18,6 +18,10 @@
 
 .present__slogan {
   font-family: @inter;
+
+  // @media screen and (min-width: @extra-large) {
+  //   width: 458px;
+  // }
 }
 
 .present__form-wrapper {
@@ -27,6 +31,7 @@
   box-shadow: @shadow;
 
   @media screen and (min-width: @medium) {
+    width: 100%;
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
@@ -36,7 +41,11 @@
   @media screen and (min-width: @extra-large) {
     max-width: 726px;
     padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
     padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

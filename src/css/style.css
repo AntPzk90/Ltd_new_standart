@@ -220,6 +220,7 @@ a {
     align-items: center;
     padding-top: 0;
     min-height: 60px;
+    position: static;
   }
 }
 .header__logo {
@@ -333,6 +334,11 @@ a {
 .header__navigation-list-item--services {
   position: relative;
 }
+@media screen and (min-width: 1200px) {
+  .header__navigation-list-item--services {
+    position: static;
+  }
+}
 .header__sub-list {
   display: none;
   padding-left: 20px;
@@ -344,6 +350,14 @@ a {
     margin-left: -20px;
     margin-top: 10px;
     padding-left: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__sub-list {
+    position: absolute;
+    top: 50px;
+    z-index: 10;
+    width: 268px;
   }
 }
 .header__sub-list-item {
@@ -731,6 +745,7 @@ a {
 }
 @media screen and (min-width: 768px) {
   .present__form-wrapper {
+    width: 100%;
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
@@ -741,7 +756,11 @@ a {
   .present__form-wrapper {
     max-width: 726px;
     padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
     padding-bottom: 0;
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 .present__form .select2 {
@@ -1079,6 +1098,7 @@ a {
 @media screen and (min-width: 1200px) {
   .slider {
     margin-bottom: 0;
+    margin-right: 0;
   }
 }
 .slider__item {
@@ -1571,6 +1591,8 @@ a {
   .result-item__btn {
     height: 32px;
     margin-top: 28px;
+    max-width: 230px;
+    margin-left: auto;
   }
 }
 .result-item__btn--no-bargain::after {
@@ -1585,6 +1607,11 @@ a {
   position: absolute;
   top: 10px;
   right: 30%;
+}
+@media screen and (min-width: 1200px) {
+  .result-item__btn--no-bargain::after {
+    right: 20%;
+  }
 }
 .result-item__btn--no-bargain .result-item__btn-bargain {
   display: block;

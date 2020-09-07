@@ -12,6 +12,7 @@
     align-items: center;
     padding-top: 0;
     min-height: 60px;
+    position: static;
   }
 }
 
@@ -117,6 +118,10 @@
 
 .header__navigation-list-item--services {
   position: relative;
+
+  @media screen and (min-width: @extra-large) {
+    position: static;
+  }
 }
 
 .header__sub-list {
@@ -129,6 +134,14 @@
     margin-left: -20px;
     margin-top: 10px;
     padding-left: 40px;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    position: absolute;
+    top: 50px;
+    z-index: 10;
+    width: 268px;
+    //min-height: 420px;
   }
 }
 
