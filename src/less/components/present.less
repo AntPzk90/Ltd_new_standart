@@ -368,7 +368,17 @@
 }
 
 .slick-current {
-  @media screen and (min-width: @extra-large){
+  @media screen and (min-width: @extra-large) {
+    outline: none;
+
+    div {
+      outline: none;
+    }
+
+    .slick-slide {
+      outline: none;
+    }
+
     div:nth-child(2) {
       position: relative;
 
@@ -384,6 +394,5 @@
         transform: translateX(-50%);
       }
     }
-
   }
 }

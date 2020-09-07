@@ -101,6 +101,8 @@ a {
   padding-right: 15px;
   text-align: center;
   border-radius: 3px;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
 }
 .btn--brown {
   border: 1px solid #c1bd98;
@@ -1068,6 +1070,15 @@ a {
   }
 }
 @media screen and (min-width: 1200px) {
+  .slick-current {
+    outline: none;
+  }
+  .slick-current div {
+    outline: none;
+  }
+  .slick-current .slick-slide {
+    outline: none;
+  }
   .slick-current div:nth-child(2) {
     position: relative;
   }
