@@ -5,6 +5,14 @@
   background-color: @white;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: @extra-large) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    min-height: 60px;
+  }
 }
 
 .header__logo {
@@ -19,12 +27,27 @@
     position: absolute;
     bottom: -12px;
     left: -15px;
+
+    @media screen and (min-width: @extra-large) {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: @extra-large) {
+    width: 147px;
+    display: block;
   }
 }
 
 .header__logo-img {
   height: 28px;
   object-fit: cover;
+
+  @media screen and (min-width: @extra-large) {
+    height: 36px;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .header__navigation {
@@ -35,6 +58,27 @@
   margin-left: -15px;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: @medium) {
+    width: calc(100% + 40px);
+    margin-left: -20px;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    display: block;
+    width: 100%;
+    max-width: 600px;
+    background-color: @white;
+    order: 1;
+    margin-left: 0;
+  }
+}
+
+.header__navigation-list {
+  @media screen and (min-width: @extra-large) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .header__navigation-list-item {
@@ -45,7 +89,19 @@
   margin-bottom: 20px;
 
   .header__navigation-link {
-    color: @text-color;
+    color: @black;
+
+    @media screen and (min-width: @extra-large) {
+      font-weight: 400;
+    }
+  }
+
+  @media screen and (min-width: @extra-large) {
+    font-size: 12px;
+    line-height: 19px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
   }
 }
 
@@ -53,10 +109,95 @@
   .header__navigation-link {
     color: @brown;
   }
+
+  @media screen and (min-width: @extra-large) {
+    border-bottom: 2px solid @brown;
+  }
+}
+
+.header__navigation-list-item--services {
+  position: relative;
 }
 
 .header__sub-list {
   display: none;
+  padding-left: 20px;
+
+  @media screen and (min-width: @medium) {
+    background-color: #9a9995;
+    width: calc(100% + 40px);
+    margin-left: -20px;
+    margin-top: 10px;
+    padding-left: 40px;
+  }
+}
+
+.header__sub-list-item {
+  padding-top: 6px;
+  padding-bottom: 7px;
+}
+
+.header__sub-list-link {
+  font-size: 15px;
+  line-height: 24px;
+  color: @black;
+
+  @media screen and (min-width: @medium) {
+    color: @white;
+  }
+}
+
+.header__sub-list-btn {
+  position: absolute;
+  right: 0;
+  top: 10px;
+  padding-left: 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+
+  &::after {
+    content: "Открыть";
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 6px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-image: url("../img/dropdown-arrow.png");
+    background-size: 11px 6px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    display: none;
+  }
+}
+
+.header__sub-list-btn--active {
+  &::after {
+    content: "Назад";
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 6px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-image: url("../img/dropdown-arrow.png");
+    background-size: 11px 6px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transform: rotate(90deg);
+  }
 }
 
 .header__logged-block {
@@ -70,6 +211,14 @@
   padding-left: 15px;
   padding-right: 15px;
   margin-top: 12px;
+
+  @media screen and (min-width: @extra-large) {
+    order: 2;
+    width: 215px;
+    background-color: transparent;
+    margin-top: 0;
+    padding: 0;
+  }
 }
 
 .header__user-list {
@@ -78,19 +227,43 @@
   padding-bottom: 30px;
   justify-content: space-between;
 
+  @media screen and (min-width: @medium) {
+    width: 280px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: -18px;
+    right: 80px;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    position: static;
+    width: 100%;
+    padding: 0;
+  }
+
   .header__user-list-item {
     width: 100%;
-    max-width: 168px;
+    max-width: 100%;
+
+    &:first-child {
+      margin-right: 5px;
+    }
+
+    &:last-child {
+      margin-left: 5px;
+    }
   }
 
   .header__user-link {
     width: 100%;
-    max-width: 168px;
+    max-width: 100%;
+    cursor: pointer;
   }
 }
 
 .header__logged-list {
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
 .header__logged-list-link {
@@ -180,6 +353,10 @@
   background-color: transparent;
   border: none;
   outline: none;
+
+  @media screen and (min-width: @extra-large) {
+    display: none;
+  }
 }
 
 .header__mobile-btn--gamburger {

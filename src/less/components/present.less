@@ -1,9 +1,19 @@
 .present {
   padding-top: 30px;
+
+  @media screen and (min-width: @medium) {
+    padding-top: 85px;
+    padding-bottom: 140px;
+  }
 }
 
 .present__wrapper {
   margin-bottom: 80px;
+
+  @media screen and (min-width: @extra-large) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
 }
 
 .present__slogan {
@@ -14,30 +24,101 @@
   background-color: @white;
   padding: 23px;
   border-radius: 4px;
+  box-shadow: @shadow;
+
+  @media screen and (min-width: @medium) {
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 45px;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    max-width: 726px;
+    padding-top: 45px;
+    padding-bottom: 0;
+  }
 }
 
 .present__form {
   .select2 {
     display: none;
+
+    @media screen and (min-width: @extra-large) {
+      display: block;
+      width: 100% !important;
+      max-width: 200px;
+    }
   }
 
   .present__text-input {
     width: 100%;
     max-width: 100%;
     margin-bottom: 10px;
+
+    @media screen and (min-width: @extra-large) {
+      max-width: 200px;
+    }
   }
 
   .present__fieldset--weight {
+    @media screen and (min-width: @extra-large) {
+      display: flex;
+
+      .present__form-wrapper-inner {
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+
+        &:first-child {
+          margin-right: 10px;
+        }
+
+        &:last-child {
+          margin-left: 10px;
+        }
+
+        .present__text-input {
+          width: 98px;
+        }
+      }
+    }
+
     .present__text-input {
       display: none;
       width: 100%;
       max-width: 100%;
+
+      @media screen and (min-width: @extra-large) {
+        display: block;
+        max-width: 200px;
+      }
     }
+  }
+}
+
+.present__form-wrapper-inner {
+  @media screen and (min-width: @extra-large) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.present__form-btn-wrapper {
+  @media screen and (min-width: @extra-large) {
+    display: flex;
   }
 }
 
 .present__form-btn-reset {
   display: none;
+
+  @media screen and (min-width: @extra-large) {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin-right: 10px;
+  }
 }
 
 .present__form-btn-close {
@@ -46,7 +127,7 @@
 
 .present__form--active {
   padding-top: 20px;
-  margin-top: -432px;
+  margin-top: -430px;
   background-color: @white;
   position: relative;
   z-index: 2;
@@ -55,6 +136,10 @@
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 20px;
+
+  @media screen and (min-width: @medium) {
+    margin-top: -359px;
+  }
 
   .select2 {
     display: block;
@@ -126,6 +211,16 @@
   }
 }
 
+.present__fieldset--type {
+  @media screen and (min-width: @extra-large) {
+    display: flex;
+
+    .select2 {
+      margin-right: 10px;
+    }
+  }
+}
+
 .present__form-mobile-title {
   display: none;
 }
@@ -183,6 +278,10 @@
     background-repeat: no-repeat;
     background-position: 50%;
   }
+
+  @media screen and (min-width: @extra-large) {
+    display: none;
+  }
 }
 
 .present__form-btn-submit {
@@ -197,12 +296,34 @@
   padding-bottom: 15px;
   border-radius: 3px;
   margin-bottom: 20px;
+  box-shadow: @shadow;
+
+  @media screen and (min-width: @medium) {
+    margin-bottom: 30px;
+    padding-top: 15px;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    width: 300px;
+    margin-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 
   .slick-dots {
     display: flex;
     justify-content: space-around;
     padding-left: 20%;
     padding-right: 20%;
+
+    @media screen and (min-width: @medium) {
+      width: 80px;
+      margin: 0 auto;
+
+      li {
+        margin-left: 10px;
+      }
+    }
 
     button {
       font-size: 0;
@@ -215,5 +336,45 @@
     .slick-active button {
       background-color: @brown;
     }
+  }
+}
+
+.slider__item {
+  &:nth-child(2n) {
+    @media screen and (min-width: @medium) {
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 2px;
+        height: 66px;
+        background-color: @brown;
+        position: absolute;
+        top: 35px;
+        left: 3px;
+      }
+    }
+  }
+}
+
+.slick-current {
+  @media screen and (min-width: @extra-large){
+    div:nth-child(2) {
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        width: 86px;
+        height: 2px;
+        background-color: @brown;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+
   }
 }

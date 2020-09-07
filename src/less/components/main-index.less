@@ -3,4 +3,14 @@
   background-size: 100% 762px;
   background-position:0 0;
   background-repeat: no-repeat;
+
+  @media screen and (min-width: @medium) {
+    background-image: url("../img/map-background-tablet.png");
+    background-size: 100% 1024px;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    background-image: url("../img/map-background.png");
+    background-size: 100% 912px;
+  }
 }
