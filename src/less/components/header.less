@@ -287,6 +287,9 @@
   .header__logged-block {
     display: block;
 
+    @media screen and (min-width: @extra-large) {
+      position: relative;
+    }
     // &::after {
     //   content: "";
     //   display: block;
@@ -298,7 +301,7 @@
   }
 
   .header__user-list {
-    display: none!important;
+    display: none !important;
   }
 
   .header__logged-icon {
@@ -310,6 +313,11 @@
     top: 9px;
     right: 55px;
     animation: scale 0.3s;
+
+    @media screen and (min-width: @extra-large) {
+      right: 0;
+      left: 5px;
+    }
   }
 
   .header__logged-icon-img {
@@ -338,10 +346,25 @@
       bottom: 0;
       left: 0;
     }
+
+    @media screen and (min-width: @extra-large) {
+      display: block;
+      margin-left: 60px;
+
+      &::after {
+        display: none;
+      }
+    }
   }
 
   .header__logged-list {
     display: none;
+
+    @media screen and (min-width: @extra-large) {
+      position: absolute;
+      background-color: #9a9995;
+      z-index: 10;
+    }
   }
 
   .header__logged-list-item {
@@ -350,10 +373,25 @@
     line-height: 27px;
     margin-top: 20px;
     margin-bottom: 20px;
+
+    @media screen and (min-width: @extra-large) {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
 
   .header__logged-list-link {
     color: @text-color;
+
+    @media screen and (min-width: @extra-large) {
+      color: @white;
+      font-size: 12px;
+      border-bottom: 1px solid @white;
+      padding-bottom: 12px;
+      padding-right: 20px;
+      width: 100%;
+      display: inline-block;
+    }
   }
 }
 
