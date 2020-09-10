@@ -1,0 +1,203 @@
+.about-project {
+
+}
+
+.about-project__start-screen {
+  background-image: url("../img/about-project-mobile.png");
+
+  @media screen and (min-width: @medium) {
+    background-image: url("../img/about-project-tablet.png");
+  }
+
+  @media screen and (min-width: @extra-large) {
+    background-image: url("../img/about-project-desktop.png");
+  }
+}
+
+.about-project__start-info {
+  background-color: @light-gray;
+}
+
+.about-project__inner-wrapper {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.about-project__start-slogan {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: @bellota;
+  line-height: 39px;
+  color: @black;
+}
+
+.about-project__txt-wrapper {
+  margin-bottom: 20px;
+}
+
+.about-project__txt-bold {
+  font-size: 17px;
+  line-height: 26px;
+  color: @black;
+}
+
+.numered-list {
+  padding: 0;
+  margin: 0;
+  counter-reset: myCounter;
+
+  .numered-list__item {
+    list-style: none;
+    position: relative;
+
+    &::before {
+      counter-increment: myCounter;
+      content: "0" counter(myCounter);
+      color: @red;
+      display: block;
+      text-align: left;
+      line-height: 40px;
+      width: 40px;
+      height: 40px;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: @border-color;
+      position: absolute;
+      top: 40px;
+      left: 0;
+    }
+  }
+}
+
+.about-project__motivatig {
+  background-color: @light-gray;
+}
+
+.about-project__motivation-top-wrapper {
+  margin-bottom: 80px;
+}
+
+.about-project__motivation-slogan {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: @bellota;
+  line-height: 39px;
+  color: @black;
+}
+
+.about-project__motivation-slogan-txt {
+  font-size: 17px;
+  line-height: 26px;
+  color: @black;
+}
+
+.about-project__final-target-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: @white;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 35px;
+  margin-bottom: 80px;
+}
+
+.about-project__final-target-img {
+  height: 317px;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+
+.about-project__final-target-img-wrapper {
+  position: relative;
+  padding-bottom: 25px;
+  padding-right: 25px;
+  margin-bottom: 40px;
+  margin-top: -50px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 318px;
+    background-color: @border-color;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+  }
+}
+
+.about-project__big-slogan {
+  font-size: 40px;
+  line-height: 62px;
+  color: @black;
+  font-family: @bellota;
+}
+
+.about-project__final-target-txt {
+  margin-bottom: 35px;
+}
+
+.about-project__links {
+
+}
+
+.about-project__links-slogan {
+  font-size: 26px;
+  font-weight: bold;
+  font-family: @bellota;
+  line-height: 39px;
+  color: @black;
+}
+
+.about-project__links-txt {
+  font-size: 17px;
+  line-height: 26px;
+  color: @black;
+}
+
+.about-project__links-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-project__link {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: @bellota;
+  line-height: 29px;
+  color: @brown;
+  text-align: center;
+  border: 1px solid @brown;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  padding-right: 20%;
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::after {
+    content: "";
+    width: 22px;
+    height: 15px;
+    background-image: url("../img/right-arrow-brown.png");
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+  }
+}

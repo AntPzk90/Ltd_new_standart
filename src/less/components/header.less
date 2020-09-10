@@ -1,3 +1,10 @@
+.header {
+  @media screen and (min-width: @extra-large) {
+    border-bottom: 1px solid @border-color;
+    box-shadow: 0 0 6px 0 rgba(143, 139, 124, 0.32);
+  }
+}
+
 .header__wrapper {
   min-height: 50px;
   padding-top: 12px;
@@ -103,6 +110,18 @@
     padding-top: 20px;
     padding-bottom: 20px;
     margin: 0;
+
+    &:hover {
+      .header__navigation-link {
+        color: @brown;
+      }
+    }
+
+    &:active {
+      .header__navigation-link {
+        opacity: 0.8;
+      }
+    }
   }
 }
 

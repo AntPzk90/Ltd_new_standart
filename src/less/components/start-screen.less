@@ -1,0 +1,37 @@
+.start-screen {
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  padding-top: 75px;
+  padding-bottom: 125px;
+
+  @media screen and (min-width: @medium) {
+    padding-top: 115px;
+    padding-bottom: 145px;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    padding-top: 115px;
+    padding-bottom: 125px;
+  }
+}
+
+.start-screen__wrapper {
+  @media screen and (min-width: @medium) {
+    padding-left: 62px;
+  }
+  @media screen and (min-width: @extra-large) {
+    padding-left: 0;
+  }
+}
+
+.start-screen__title {
+  font-size: 44px;
+  line-height: 65px;
+  color: @white;
+
+  @media screen and (min-width: @medium) {
+    font-size: 65px;
+    line-height: 125px;
+  }
+}

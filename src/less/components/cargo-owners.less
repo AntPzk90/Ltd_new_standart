@@ -1,14 +1,30 @@
 .cargo-owners {
-
+  @media screen and (min-width: @extra-large) {
+    background-color: @gray;
+  }
 }
 
 .cargo-owners__start-screen {
   background-image: url("../img/cargo-owners-mobile.png");
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  padding-top: 75px;
-  padding-bottom: 125px;
+
+  @media screen and (min-width: @medium) {
+    background-image: url("../img/cargo-owners-tablet.png");
+  }
+
+  @media screen and (min-width: @extra-large) {
+    background-image: url("../img/cargo-owners-desktop.png");
+  }
+}
+
+.cargo-owners__title {
+  font-size: 44px;
+  line-height: 65px;
+  color: @white;
+
+  @media screen and (min-width: @medium) {
+    font-size: 65px;
+    line-height: 125px;
+  }
 }
 
 .cargo-owners__list-wrapper {
@@ -18,6 +34,19 @@
 .cargo-owners__list {
   padding-top: 80px;
   padding-bottom: 90px;
+
+  @media screen and (min-width: @medium) {
+    padding-left: 62px;
+    padding-right: 62px;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 
 .cargo-owners__list-item {
@@ -25,10 +54,29 @@
   border-radius: 4px;
   padding: 28px 15px;
   background-color: @white;
-}
+  transition: all ease 0.3s;
+  margin-bottom: 30px;
 
-.cargo-owners__title {
-  color: @white;
+  &:hover {
+    box-shadow: @shadow;
+
+    .cargo-owners__company-name {
+      color: @brown;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    width: 100%;
+    max-width: 370px;
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .cargo-owners__company {
@@ -55,4 +103,25 @@
 .cargo-owners__dscr-txt {
   padding-top: 10px;
   color: @black;
+}
+
+.cargo-owners__dscr {
+  margin-bottom: 48px;
+  min-height: 50%;
+
+  @media screen and (min-width: @extra-large) {
+    margin-bottom: 35px;
+  }
+}
+
+.cargo-owners__btn {
+  &:hover {
+    background-color: @brown;
+    color: @white;
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    min-width: 225px;
+  }
 }

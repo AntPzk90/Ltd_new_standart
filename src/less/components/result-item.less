@@ -282,6 +282,7 @@
 }
 
 .result-item__customer-name {
+  display: block;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 20px;
@@ -289,6 +290,15 @@
   font-family: @bellota;
   line-height: 29px;
   color: @black;
+  transition: all ease-in 0.3s;
+
+  &:hover {
+    color: @brown;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .result-item__payment {
