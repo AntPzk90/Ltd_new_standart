@@ -1,24 +1,24 @@
-.about-project {
+.cargo-owner-info {
 
 }
 
-.about-project__start-screen {
-  background-image: url("../img/about-project-mobile.png");
+.cargo-owner-info__start-screen {
+  background-image: url("../img/cargo-owner-info-mobile.png");
 
   @media screen and (min-width: @medium) {
-    background-image: url("../img/about-project-tablet.png");
+    background-image: url("../img/cargo-owner-info-tablet.png");
   }
 
   @media screen and (min-width: @extra-large) {
-    background-image: url("../img/about-project-desktop.png");
+    background-image: url("../img/cargo-owner-info-desktop.png");
   }
 }
 
-.about-project__start-info {
+.cargo-owner-info__start-info {
   background-color: @light-gray;
 }
 
-.about-project__inner-wrapper {
+.cargo-owner-info__inner-wrapper {
   padding-top: 75px;
   padding-bottom: 75px;
 
@@ -36,7 +36,36 @@
   }
 }
 
-.about-project__start-slogan {
+.cargo-owner-info__start-list {
+  font-size: 17px;
+  line-height: 26px;
+  color: @black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 35px;
+  margin-bottom: 75px;
+  border-bottom: 1px solid @border-color;
+
+  @media screen and (min-width: @medium) {
+  }
+}
+
+.cargo-owner-info__start-list-item {
+  width: 100%;
+  max-width: 430px;
+
+  &:nth-child(1) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: @medium) {
+    max-width: 290px;
+  }
+}
+
+.cargo-owner-info__start-slogan {
   font-size: 26px;
   font-weight: bold;
   font-family: @bellota;
@@ -44,12 +73,12 @@
   color: @black;
 
   @media screen and (min-width: @medium) {
-    width: 48%;
+    width: 100%;
     margin-right: auto;
   }
 }
 
-.about-project__txt-wrapper {
+.cargo-owner-info__txt-wrapper {
   margin-bottom: 20px;
 
   @media screen and (min-width: @medium) {
@@ -62,17 +91,17 @@
   }
 }
 
-.about-project__txt-bold {
+.cargo-owner-info__txt-bold {
   font-size: 17px;
   line-height: 26px;
   color: @black;
 }
 
-.about-project__motivatig {
+.cargo-owner-info__motivatig {
   background-color: @light-gray;
 }
 
-.about-project__motivation-top-wrapper {
+.cargo-owner-info__motivation-top-wrapper {
   margin-bottom: 80px;
 
   @media screen and (min-width: @medium) {
@@ -82,7 +111,7 @@
   }
 }
 
-.about-project__motivation-slogan {
+.cargo-owner-info__motivation-slogan {
   font-size: 26px;
   font-weight: bold;
   font-family: @bellota;
@@ -99,7 +128,7 @@
   }
 }
 
-.about-project__motivation-slogan-txt {
+.cargo-owner-info__motivation-slogan-txt {
   font-size: 17px;
   line-height: 26px;
   color: @black;
@@ -115,7 +144,7 @@
   }
 }
 
-.about-project__final-target {
+.cargo-owner-info__final-target {
   @media screen and (min-width: @medium) {
     margin-left: auto;
     margin-right: auto;
@@ -128,12 +157,9 @@
   }
 }
 
-.about-project__final-target-wrapper {
+.cargo-owner-info__final-target-wrapper {
   display: flex;
   flex-direction: column-reverse;
-  background-color: @white;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 35px;
   margin-bottom: 80px;
 
@@ -150,7 +176,11 @@
   }
 }
 
-.about-project-final-txt-wrapper {
+.cargo-owner-info-final-txt-wrapper {
+  border: 1px solid @brown;
+  border-radius: 4px;
+  padding: 40px 20px;
+
   @media screen and (min-width: @medium) {
     width: 100%;
     max-width: 248px;
@@ -162,39 +192,26 @@
   }
 }
 
-.about-project__final-target-img {
-  height: 317px;
+.cargo-owner-info__final-target-img {
+  height: 265px;
   width: 100%;
-  object-fit: cover;
+  object-fit: contain;
   position: relative;
   z-index: 1;
+  margin-bottom: -6px;
 }
 
-.about-project__final-target-img-wrapper {
+.cargo-owner-info__final-target-img-wrapper {
   position: relative;
-  padding-bottom: 25px;
-  padding-right: 25px;
-  margin-bottom: 40px;
+  padding-left: 17%;
   margin-top: -50px;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 90%;
-    height: 318px;
-    background-color: @border-color;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    z-index: 0;
-  }
 
   @media screen and (min-width: @extra-large) {
     margin-top: -100px;
   }
 }
 
-.about-project__big-slogan {
+.cargo-owner-info__big-slogan {
   font-size: 40px;
   line-height: 62px;
   color: @black;
@@ -206,18 +223,18 @@
   }
 }
 
-.about-project__final-target-txt {
-  margin-bottom: 35px;
+.cargo-owner-info__final-target-txt {
+
 }
 
-.about-project__registration {
+.cargo-owner-info__registration {
   @media screen and (min-width: @extra-large) {
     padding-top: 12px;
     padding-bottom: 12px;
   }
 }
 
-.about-project__links {
+.cargo-owner-info__advantages {
   @media screen and (min-width: @medium) {
     padding-left: 20px;
     padding-right: 20px;
@@ -228,14 +245,14 @@
   }
 }
 
-.about-project__links-txt-wrapper {
+.cargo-owner-info__advantages-txt-wrapper {
   @media screen and (min-width: @extra-large) {
     display: flex;
     justify-content: space-between;
   }
 }
 
-.about-project__links-slogan {
+.cargo-owner-info__advantages-slogan {
   font-size: 26px;
   font-weight: bold;
   font-family: @bellota;
@@ -243,7 +260,7 @@
   color: @black;
 }
 
-.about-project__links-txt {
+.cargo-owner-info__advantages-txt {
   font-size: 17px;
   line-height: 26px;
   color: @black;
@@ -255,7 +272,7 @@
   }
 }
 
-.about-project__links-wrapper {
+.cargo-owner-info__advantages-wrapper {
   display: flex;
   flex-direction: column;
 
@@ -265,7 +282,7 @@
   }
 }
 
-.about-project__link {
+.cargo-owner-info__link {
   font-size: 20px;
   font-weight: bold;
   font-family: @bellota;
