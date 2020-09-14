@@ -1,0 +1,79 @@
+.telephone {
+  padding-bottom: 40px;
+}
+
+.telephone__wrapper {
+  padding-bottom: 60px;
+
+  @media screen and (min-width: @medium) {
+    padding-left: 11%;
+    padding-right: 11%;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    padding-left: 30px;
+    padding-right: 120px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.telephone__txt {
+  font-size: 17px;
+  line-height: 26px;
+  color: @black;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: @extra-large) {
+    width: 100%;
+    max-width: 470px;
+  }
+}
+
+.telephone__number {
+  @media screen and (min-width: @extra-large) {
+    width: 100%;
+    max-width: 430px;
+  }
+}
+
+.telephone__number-txt {
+  margin: 0;
+}
+
+.telephone__link {
+  font-size: 30px;
+  line-height: 72px;
+  font-weight: bold;
+  font-family: @bellota;
+  color: @black;
+  transition: all ease-in 0.3s;
+
+  @media screen and (min-width: @extra-large) {
+    font-size: 48px;
+    line-height: 72px;
+  }
+
+  &:hover {
+    color: @brown;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.telephone__registration-txt {
+  font-size: 20px;
+  font-family: @bellota;
+  font-weight: bold;
+  line-height: 29px;
+  color: @black;
+}
+
+.telephone__registration-btn {
+  @media screen and (min-width: @extra-large) {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+}

@@ -14,10 +14,6 @@
   }
 }
 
-.cargo-owner-info__start-info {
-  background-color: @light-gray;
-}
-
 .cargo-owner-info__inner-wrapper {
   padding-top: 75px;
   padding-bottom: 75px;
@@ -25,15 +21,19 @@
   @media screen and (min-width: @medium) {
     display: flex;
     flex-wrap: wrap;
-    padding-left: 6%;
-    padding-right: 6%;
+    padding-left: 11%;
+    padding-right: 11%;
   }
 
   @media screen and (min-width: @extra-large) {
     padding-left: 30px;
-    padding-right: 30px;
+    padding-right: 120px;
     justify-content: flex-start;
   }
+}
+
+.cargo-owner-info__start-info {
+  background-color: @light-gray;
 }
 
 .cargo-owner-info__start-list {
@@ -63,6 +63,10 @@
   @media screen and (min-width: @medium) {
     max-width: 290px;
   }
+
+  @media screen and (min-width: @extra-large) {
+    max-width: 430px;
+  }
 }
 
 .cargo-owner-info__start-slogan {
@@ -91,6 +95,10 @@
   }
 }
 
+.cargo-owner-info__numered-list {
+  flex-wrap: wrap;
+}
+
 .cargo-owner-info__txt-bold {
   font-size: 17px;
   line-height: 26px;
@@ -99,6 +107,15 @@
 
 .cargo-owner-info__motivatig {
   background-color: @light-gray;
+}
+
+.cargo-owner-info__motivating-wrapper {
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  @media screen and (min-width: @extra-large) {
+    padding-right: 120px;
+  }
 }
 
 .cargo-owner-info__motivation-top-wrapper {
@@ -148,6 +165,8 @@
   @media screen and (min-width: @medium) {
     margin-left: auto;
     margin-right: auto;
+    border: 1px solid @brown;
+    border-radius: 4px;
   }
 
   @media screen and (min-width: @extra-large) {
@@ -160,17 +179,15 @@
 .cargo-owner-info__final-target-wrapper {
   display: flex;
   flex-direction: column-reverse;
-  padding-bottom: 35px;
-  margin-bottom: 80px;
 
   @media screen and (min-width: @medium) {
     flex-direction: row;
-    padding-left: 62px;
+    padding-left: 42px;
   }
 
   @media screen and (min-width: @extra-large) {
-    padding-top: 55px;
-    padding-bottom: 25px;
+    padding-top: 35px;
+    padding-bottom: 7px;
     justify-content: space-between;
     padding-right: 60px;
   }
@@ -183,8 +200,10 @@
 
   @media screen and (min-width: @medium) {
     width: 100%;
-    max-width: 248px;
-    margin-right: 50px;
+    max-width: 310px;
+    margin-right: 0;
+    border: none;
+    padding: 30px 0;
   }
 
   @media screen and (min-width: @extra-large) {
@@ -199,6 +218,11 @@
   position: relative;
   z-index: 1;
   margin-bottom: -6px;
+
+  @media screen and (min-width: @medium) {
+    height: 384px;
+    margin-bottom: -18px;
+  }
 }
 
 .cargo-owner-info__final-target-img-wrapper {
@@ -206,25 +230,26 @@
   padding-left: 17%;
   margin-top: -50px;
 
+  @media screen and (min-width: @medium) {
+    padding-left: 0;
+  }
+
   @media screen and (min-width: @extra-large) {
     margin-top: -100px;
   }
 }
 
 .cargo-owner-info__big-slogan {
-  font-size: 40px;
-  line-height: 62px;
+  font-size: 26px;
+  line-height: 39px;
   color: @black;
   font-family: @bellota;
-
-  @media screen and (min-width: @extra-large) {
-    font-size: 65px;
-    line-height: 1.2;
-  }
 }
 
 .cargo-owner-info__final-target-txt {
-
+  font-size: 17px;
+  line-height: 26px;
+  color: @black;
 }
 
 .cargo-owner-info__registration {
@@ -234,21 +259,23 @@
   }
 }
 
-.cargo-owner-info__advantages {
+.cargo-owner-info__advantages-wrapper {
   @media screen and (min-width: @medium) {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 11%;
+    padding-right: 11%;
   }
 
   @media screen and (min-width: @extra-large) {
     width: 100%;
+    padding-left: 30px;
+    padding-right: 120px;
   }
 }
 
 .cargo-owner-info__advantages-txt-wrapper {
   @media screen and (min-width: @extra-large) {
-    display: flex;
-    justify-content: space-between;
+    padding-top: 65px;
+    width: 100%;
   }
 }
 
@@ -258,6 +285,12 @@
   font-family: @bellota;
   line-height: 39px;
   color: @black;
+  display: block;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: @extra-large) {
+    margin-bottom: 50px;
+  }
 }
 
 .cargo-owner-info__advantages-txt {
@@ -272,9 +305,71 @@
   }
 }
 
+.cargo-owner-info__advantages-list {
+  border-bottom: 1px solid @border-color;
+  padding-bottom: 75px;
+
+  @media screen and (min-width: @extra-large) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+}
+
+.cargo-owner-info__advantages-list-item {
+  padding-left: 95px;
+  position: relative;
+
+  @media screen and (min-width: @medium) {
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @media screen and (min-width: @extra-large) {
+    width: 100%;
+    max-width: 300px;
+    padding-left: 0;
+    padding-top: 120px;
+  }
+}
+
+.cargo-owner-info__advantages-list-img-wrapper {
+  width: 80px;
+  height: 80px;
+  border: 1px solid @brown;
+  border-radius: 4px;
+  background-color: @light-gray;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.cargo-owner-info__advantages-list-img {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.cargo-owner-info__advantages-list-title {
+  font-size: 20px;
+  font-family: @bellota;
+  line-height: 29px;
+  font-weight: bold;
+  color: #293746;
+}
+
+
 .cargo-owner-info__advantages-wrapper {
   display: flex;
   flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 75px;
 
   @media screen and (min-width: @medium) {
     flex-direction: row;

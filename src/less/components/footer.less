@@ -246,6 +246,15 @@
   font-size: 20px;
   font-family: @bellota;
   font-weight: bold;
+  transition: all ease-in 0.3s;
+
+  &:hover {
+    color: @brown;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 .footer__wrapper-bottom {
@@ -278,4 +287,34 @@
 .footer__confidentiality {
   margin-bottom: 17px;
   color: @brown;
+}
+
+.footer__telegramm-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: @extra-large) {
+    margin-bottom: 0;
+  }
+}
+
+.footer__telegramm-icon {
+  margin-right: 20px;
+}
+
+.footer__telegramm-txt {
+  color: @text-color;
+  font-size: 20px;
+  font-family: @bellota;
+  font-weight: bold;
+  transition: all ease-in 0.3s;
+
+  &:hover {
+    color: @brown;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
 }
