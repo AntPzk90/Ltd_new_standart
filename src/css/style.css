@@ -4524,6 +4524,9 @@ a {
   display: block;
   margin-bottom: 10px;
 }
+.vacancies-inner__sub-title {
+  display: none;
+}
 .vacancies-inner__dscr {
   display: block;
   margin-bottom: 15px;
@@ -4573,7 +4576,7 @@ a {
 .vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-row,
 .vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-row,
 .vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-row {
-  width: 1142px;
+  width: 100%;
 }
 .vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(1),
 .vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(1),

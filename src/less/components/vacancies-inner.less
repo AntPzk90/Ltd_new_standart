@@ -45,6 +45,10 @@
   margin-bottom: 10px;
 }
 
+.vacancies-inner__sub-title {
+  display: none;
+}
+
 .vacancies-inner__dscr {
   display: block;
   margin-bottom: 15px;
@@ -85,7 +89,7 @@
 
     .vacancies-inner__table-title-row,
     .vacancies-inner__table-row {
-      width: 1142px;
+      width: 100%;
 
       div:nth-child(1) {
         width: 120px;
@@ -124,6 +128,12 @@
           position: absolute;
           top: 10%;
           right: 0;
+        }
+
+        &:last-child {
+          // &::after {
+          //   display: none;
+          // }
         }
       }
 
