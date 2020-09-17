@@ -1,0 +1,123 @@
+.vacancies {
+  background-color: @gray;
+}
+
+.vacancies__main-wrapper {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.vacancies__top-wrapper {
+  @media screen and (min-width: @extra-large) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 75px;
+  }
+}
+
+.vacancies__main-dscr {
+  font-size: 17px;
+  line-height: 26px;
+  color: @black;
+
+  @media screen and (min-width: @medium) {
+    width: 100%;
+    max-width: 465px;
+  }
+}
+
+.vacancies__list {
+  @media screen and (min-width: @medium) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.vacancies__list-item {
+  padding: 27px 23px;
+  border: 1px solid @border-color;
+  background-color: @white;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  position: relative;
+
+  &:hover {
+    box-shadow: @shadow;
+
+    .vacancies__title-link {
+      color: @brown;
+    }
+  }
+
+  @media screen and (min-width: @medium) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 48.5%;
+  }
+}
+
+.vacancies__title-link {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: @bellota;
+  transition: all ease-in 0.3s;
+  color: @black;
+  cursor: pointer;
+
+  &:hover {
+    color: @brown;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.vacancies__dscr {
+  margin-bottom: auto;
+}
+
+.vacancies__wrapper-inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.vacancies__salory {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: @bellota;
+  color: @black;
+}
+
+.vacancies__link {
+  display: block;
+  width: 22px;
+  height: 15px;
+  position: relative;
+  padding: 0 16px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    width: 22px;
+    height: 15px;
+    background-image: url(../img/right-arrow-brown.png);
+    background-size: 22px 15px;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    right: 15%;
+    transform: translateY(-50%);
+  }
+
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+}

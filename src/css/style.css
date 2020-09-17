@@ -68,6 +68,13 @@ a {
   margin: 0;
   border: none;
 }
+.form__title {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: bold;
+  font-family: "Bellota Text", cursive;
+  color: #23211d;
+}
 .form__text-input {
   background-color: #f9f7f7;
   border: none;
@@ -3864,6 +3871,11 @@ a {
 .info__main-wrapper {
   padding-top: 30px;
 }
+@media screen and (min-width: 1200px) {
+  .info__main-wrapper {
+    padding-bottom: 90px;
+  }
+}
 .info__main-title {
   font-size: 26px;
 }
@@ -3901,6 +3913,7 @@ a {
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    margin-bottom: 30px;
   }
 }
 .info__top-full-width-wrapper {
@@ -3918,6 +3931,14 @@ a {
 @media screen and (min-width: 1200px) {
   .info__top-full-width-wrapper {
     width: 100%;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
   }
 }
 .info__number,
@@ -3925,17 +3946,37 @@ a {
 .info__cargo-owner {
   margin-bottom: 10px;
 }
-.info__number {
-  width: 20%;
+@media screen and (min-width: 1200px) {
+  .info__number,
+  .info__status,
+  .info__cargo-owner {
+    margin-bottom: 0;
+  }
 }
-.info__status {
-  width: 40%;
+@media screen and (min-width: 768px) {
+  .info__number {
+    width: 20%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info__number {
+    width: auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .info__status {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info__status {
+    width: auto;
+  }
 }
 .info__cargo-owner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 10px;
 }
 .info__cargo-owner-icon {
   display: block;
@@ -3973,6 +4014,11 @@ a {
     padding-top: 4px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .info__cargo-owner-chat-btn {
+    margin-left: 0;
+  }
+}
 .info__top-left-wrapper {
   border-top: 1px solid #d9d8d4;
   border-bottom: 1px solid #d9d8d4;
@@ -3994,10 +4040,16 @@ a {
   .info__top-left-wrapper {
     width: 100%;
     max-width: 570px;
+    margin-bottom: 0;
   }
 }
 .info__top-left-wrapper .info__inner-wrapper {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .info__top-left-wrapper .info__inner-wrapper {
+    margin-right: 20px;
+  }
 }
 .info__documents-list {
   margin-bottom: 20px;
@@ -4066,6 +4118,7 @@ a {
   .info__top-right-wrapper {
     width: 100%;
     max-width: 570px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -4075,6 +4128,11 @@ a {
 }
 .info__top-right-wrapper .info__inner-wrapper {
   margin-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .info__top-right-wrapper .info__inner-wrapper {
+    margin-right: 20px;
+  }
 }
 @media screen and (min-width: 768px) {
   .info__finance-list {
@@ -4117,6 +4175,21 @@ a {
     display: block;
   }
 }
+.info__bargaining-message--final,
+.info__bargaining-link-txt {
+  display: none;
+}
+.info__bargaining-link {
+  color: #c1bd98;
+  text-decoration: underline;
+}
+.info__bargaining--final .info__bargaining-message {
+  display: none;
+}
+.info__bargaining--final .info__bargaining-message--final,
+.info__bargaining--final .info__bargaining-link-txt {
+  display: block;
+}
 @media screen and (min-width: 768px) {
   .info__bargaining-list-item {
     margin-right: 20px;
@@ -4137,6 +4210,11 @@ a {
     width: 100%;
     border: 1px solid #d9d8d4;
     border-radius: 6px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info__middle-wrapper {
+    margin-bottom: 30px;
   }
 }
 .info__transport-list-item {
@@ -4181,6 +4259,11 @@ a {
     width: 100%;
     border: 1px solid #d9d8d4;
     border-radius: 6px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .info__bottom-wrapper {
+    margin-bottom: 0;
   }
 }
 .info__route-item {
@@ -4268,4 +4351,325 @@ a {
 .info__route-comment {
   margin-bottom: 10px;
   width: 100%;
+}
+.vacancies {
+  background-color: #fbf9f9;
+}
+.vacancies__main-wrapper {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+@media screen and (min-width: 1200px) {
+  .vacancies__top-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 75px;
+  }
+}
+.vacancies__main-dscr {
+  font-size: 17px;
+  line-height: 26px;
+  color: #23211d;
+}
+@media screen and (min-width: 768px) {
+  .vacancies__main-dscr {
+    width: 100%;
+    max-width: 465px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .vacancies__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+}
+.vacancies__list-item {
+  padding: 27px 23px;
+  border: 1px solid #d9d8d4;
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.vacancies__list-item:hover {
+  -webkit-box-shadow: 0px 18px 39px 0px rgba(114, 110, 95, 0.16);
+  box-shadow: 0px 18px 39px 0px rgba(114, 110, 95, 0.16);
+}
+.vacancies__list-item:hover .vacancies__title-link {
+  color: #c1bd98;
+}
+@media screen and (min-width: 768px) {
+  .vacancies__list-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    max-width: 48.5%;
+  }
+}
+.vacancies__title-link {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Bellota Text", cursive;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+  color: #23211d;
+  cursor: pointer;
+}
+.vacancies__title-link:hover {
+  color: #c1bd98;
+}
+.vacancies__title-link:active {
+  opacity: 0.8;
+}
+.vacancies__dscr {
+  margin-bottom: auto;
+}
+.vacancies__wrapper-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.vacancies__salory {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: "Bellota Text", cursive;
+  color: #23211d;
+}
+.vacancies__link {
+  display: block;
+  width: 22px;
+  height: 15px;
+  position: relative;
+  padding: 0 16px;
+  cursor: pointer;
+}
+.vacancies__link::after {
+  content: "";
+  width: 22px;
+  height: 15px;
+  background-image: url(../img/right-arrow-brown.png);
+  background-size: 22px 15px;
+  background-position: 0px 0px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 15%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.vacancies__link:hover,
+.vacancies__link:active {
+  opacity: 0.8;
+}
+.vacancies-inner {
+  background-color: #fbf9f9;
+}
+.vacancies-inner__main-wrapper {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.vacancies-inner__form {
+  background-color: #ffffff;
+  padding: 20px 14px;
+}
+.vacancies-inner__form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+.vacancies-inner__form-label .vacancies-inner__form-input {
+  background-color: transparent;
+  border: 1px solid #d9d8d4;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .vacancies-inner__checkbox-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.vacancies-inner__checkbox-list-item {
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.vacancies-inner__form-wrapper {
+  margin-bottom: 20px;
+}
+.vacancies-inner__title {
+  display: block;
+  margin-bottom: 10px;
+}
+.vacancies-inner__dscr {
+  display: block;
+  margin-bottom: 15px;
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table,
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table,
+.vacancies-inner__form-wrapper--education .vacancies-inner__table {
+  width: 87vw;
+  overflow-x: scroll;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .vacancies-inner__form-wrapper--family .vacancies-inner__table,
+  .vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table,
+  .vacancies-inner__form-wrapper--education .vacancies-inner__table {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-content,
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-content,
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-content {
+  border: 1px solid #d9d8d4;
+  border-radius: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 1142px;
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__form-label,
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__form-label,
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__form-label {
+  margin-bottom: 0;
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-row,
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-row,
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-row {
+  border-bottom: 1px solid #d9d8d4;
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-row:last-child,
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-row:last-child,
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-row:last-child {
+  border-bottom: none;
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-title-row,
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-title-row,
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-title-row,
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-row,
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-row,
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-row {
+  width: 1142px;
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(1),
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(1),
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(1),
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-row div:nth-child(1),
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-row div:nth-child(1),
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-row div:nth-child(1) {
+  width: 120px;
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(2),
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(2),
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(2),
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-row div:nth-child(2),
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-row div:nth-child(2),
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-row div:nth-child(2) {
+  width: 244px;
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(3),
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(3),
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(3),
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-row div:nth-child(3),
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-row div:nth-child(3),
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-row div:nth-child(3) {
+  width: 140px;
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(4),
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(4),
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(4),
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-row div:nth-child(4),
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-row div:nth-child(4),
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-row div:nth-child(4) {
+  width: 210px;
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(5),
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(5),
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(5),
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-row div:nth-child(5),
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-row div:nth-child(5),
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-row div:nth-child(5) {
+  width: 170px;
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(6),
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(6),
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-title-row div:nth-child(6),
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-row div:nth-child(6),
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-row div:nth-child(6),
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-row div:nth-child(6) {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-title-row .vacancies-inner__form-label,
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-title-row .vacancies-inner__form-label,
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-title-row .vacancies-inner__form-label,
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-row .vacancies-inner__form-label,
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-row .vacancies-inner__form-label,
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-row .vacancies-inner__form-label {
+  position: relative;
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-title-row .vacancies-inner__form-label::after,
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-title-row .vacancies-inner__form-label::after,
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-title-row .vacancies-inner__form-label::after,
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-row .vacancies-inner__form-label::after,
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-row .vacancies-inner__form-label::after,
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-row .vacancies-inner__form-label::after {
+  content: "";
+  display: block;
+  height: 80%;
+  width: 1px;
+  background-color: #d9d8d4;
+  position: absolute;
+  top: 10%;
+  right: 0;
+}
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-title-row .vacancies-inner__form-input,
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-title-row .vacancies-inner__form-input,
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-title-row .vacancies-inner__form-input,
+.vacancies-inner__form-wrapper--family .vacancies-inner__table .vacancies-inner__table-row .vacancies-inner__form-input,
+.vacancies-inner__form-wrapper--labor-activity .vacancies-inner__table .vacancies-inner__table-row .vacancies-inner__form-input,
+.vacancies-inner__form-wrapper--education .vacancies-inner__table .vacancies-inner__table-row .vacancies-inner__form-input {
+  border: none;
+}
+.vacancies-inner__table-title-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 12px;
+}
+.vacancies-inner__table-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }

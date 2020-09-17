@@ -1,0 +1,146 @@
+.vacancies-inner {
+  background-color: @gray;
+}
+
+.vacancies-inner__main-wrapper {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.vacancies-inner__form {
+  background-color: @white;
+  padding: 20px 14px;
+}
+
+.vacancies-inner__form-label {
+  display: block;
+  margin-bottom: 10px;
+
+  .vacancies-inner__form-input {
+    background-color: transparent;
+    border: 1px solid @border-color;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.vacancies-inner__checkbox-list {
+  @media screen and (min-width: @medium) {
+    display: flex;
+  }
+}
+
+.vacancies-inner__checkbox-list-item {
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.vacancies-inner__form-wrapper {
+  margin-bottom: 20px;
+}
+
+.vacancies-inner__title {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.vacancies-inner__dscr {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.vacancies-inner__form-wrapper--family,
+.vacancies-inner__form-wrapper--labor-activity,
+.vacancies-inner__form-wrapper--education {
+  .vacancies-inner__table {
+    width: 87vw;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: @extra-large) {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .vacancies-inner__table-content {
+      border: 1px solid @border-color;
+      border-radius: 6px;
+      padding-left: 5px;
+      padding-right: 5px;
+      width: 1142px;
+    }
+
+    .vacancies-inner__form-label {
+      margin-bottom: 0;
+    }
+
+    .vacancies-inner__table-row {
+      border-bottom: 1px solid @border-color;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+
+    .vacancies-inner__table-title-row,
+    .vacancies-inner__table-row {
+      width: 1142px;
+
+      div:nth-child(1) {
+        width: 120px;
+      }
+
+      div:nth-child(2) {
+        width: 244px;
+      }
+
+      div:nth-child(3) {
+        width: 140px;
+      }
+
+      div:nth-child(4) {
+        width: 210px;
+      }
+
+      div:nth-child(5) {
+        width: 170px;
+      }
+
+      div:nth-child(6) {
+
+        flex-grow: 1;
+      }
+
+      .vacancies-inner__form-label {
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          height: 80%;
+          width: 1px;
+          background-color: @border-color;
+          position: absolute;
+          top: 10%;
+          right: 0;
+        }
+      }
+
+      .vacancies-inner__form-input {
+        border: none;
+      }
+    }
+  }
+}
+
+.vacancies-inner__table-title-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.vacancies-inner__table-row {
+  display: flex;
+  justify-content: space-between;
+}

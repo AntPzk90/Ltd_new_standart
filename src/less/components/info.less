@@ -4,6 +4,10 @@
 
 .info__main-wrapper {
   padding-top: 30px;
+
+  @media screen and (min-width: @extra-large) {
+    padding-bottom: 90px;
+  }
 }
 
 .info__main-title {
@@ -43,6 +47,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 30px;
   }
 }
 
@@ -56,6 +61,9 @@
 
   @media screen and (min-width: @extra-large) {
     width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
   }
 }
 
@@ -63,19 +71,34 @@
 .info__status,
 .info__cargo-owner {
   margin-bottom: 10px;
+
+  @media screen and (min-width: @extra-large) {
+    margin-bottom: 0;
+  }
 }
 
 .info__number {
-  width: 20%;
+  @media screen and (min-width: @medium) {
+    width: 20%;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    width: auto;
+  }
 }
 
 .info__status {
-  width: 40%;
+  @media screen and (min-width: @medium) {
+    width: 40%;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    width: auto;
+  }
 }
 
 .info__cargo-owner {
   display: flex;
-  margin-bottom: 10px;
 }
 
 .info__cargo-owner-icon {
@@ -115,6 +138,10 @@
     height: 34px;
     padding-top: 4px;
   }
+
+  @media screen and (min-width: @extra-large) {
+    margin-left: 0;
+  }
 }
 
 .info__top-left-wrapper {
@@ -136,10 +163,15 @@
   @media screen and (min-width: @extra-large) {
     width: 100%;
     max-width: 570px;
+    margin-bottom: 0;
   }
 
   .info__inner-wrapper {
     margin-bottom: 10px;
+
+    @media screen and (min-width: @extra-large) {
+      margin-right: 20px;
+    }
   }
 }
 
@@ -211,6 +243,7 @@
   @media screen and (min-width: @extra-large) {
     width: 100%;
     max-width: 570px;
+    margin-bottom: 0;
   }
 
   .info__inner-title {
@@ -221,6 +254,10 @@
 
   .info__inner-wrapper {
     margin-bottom: 10px;
+
+    @media screen and (min-width: @extra-large) {
+      margin-right: 20px;
+    }
   }
 }
 
@@ -268,6 +305,27 @@
   }
 }
 
+.info__bargaining-message--final,
+.info__bargaining-link-txt {
+  display: none;
+}
+
+.info__bargaining-link {
+  color: @brown;
+  text-decoration: underline;
+}
+
+.info__bargaining--final {
+  .info__bargaining-message {
+    display: none;
+  }
+
+  .info__bargaining-message--final,
+  .info__bargaining-link-txt  {
+    display: block;
+  }
+}
+
 .info__bargaining-list-item {
   @media screen and (min-width: @medium) {
     margin-right: 20px;
@@ -288,6 +346,10 @@
     width: 100%;
     border: 1px solid @border-color;
     border-radius: 6px;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    margin-bottom: 30px;
   }
 }
 
@@ -337,6 +399,10 @@
     width: 100%;
     border: 1px solid @border-color;
     border-radius: 6px;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    margin-bottom: 0;
   }
 }
 
