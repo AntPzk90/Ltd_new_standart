@@ -7,9 +7,22 @@
   padding-bottom: 75px;
 }
 
+.vacancies-inner__main-title {
+  @media screen and (min-width: @extra-large) {
+    font-size: 65px;
+    line-height: 72px;
+  }
+}
+
 .vacancies-inner__form {
   background-color: @white;
   padding: 20px 14px;
+  border: 1px solid @border-color;
+  border-radius: 6px;
+
+  @media screen and (min-width: @medium) {
+    padding: 18px 18px;
+  }
 }
 
 .vacancies-inner__form-label {
@@ -34,6 +47,10 @@
 .vacancies-inner__checkbox-list-item {
   margin-right: 20px;
   vertical-align: middle;
+
+  .vacancies-inner__form-label {
+    margin-bottom: 0;
+  }
 }
 
 .vacancies-inner__form-wrapper {
@@ -47,20 +64,36 @@
 
 .vacancies-inner__sub-title {
   display: none;
+
+  @media screen and (min-width: @extra-large) {
+    display: block;
+    font-size: 39px;
+    font-family: @bellota;
+    line-height: 61px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: @black;
+  }
 }
 
-.vacancies-inner__dscr {
+.vacancies-inner__main-dscr {
   display: block;
   margin-bottom: 15px;
+
+  @media screen and (min-width: @extra-large) {
+    max-width: 770px;
+  }
 }
 
-.vacancies-inner__form-wrapper--family,
-.vacancies-inner__form-wrapper--labor-activity,
-.vacancies-inner__form-wrapper--education {
+.vacancies-inner__form-wrapper--family {
   .vacancies-inner__table {
     width: 87vw;
     overflow-x: scroll;
     margin-bottom: 20px;
+
+    @media screen and (min-width: @medium) {
+      width: 93vw;
+    }
 
     @media screen and (min-width: @extra-large) {
       width: 100%;
@@ -73,23 +106,26 @@
       padding-left: 5px;
       padding-right: 5px;
       width: 1142px;
+
+      @media screen and (min-width: @extra-large) {
+        width: 1130px;
+      }
     }
 
     .vacancies-inner__form-label {
       margin-bottom: 0;
     }
 
-    .vacancies-inner__table-row {
-      border-bottom: 1px solid @border-color;
+    .vacancies-inner__table-title-row {
+      width: 1142px;
 
-      &:last-child {
-        border-bottom: none;
+      @media screen and (min-width: @extra-large) {
+        width: 1130px;
       }
-    }
 
-    .vacancies-inner__table-title-row,
-    .vacancies-inner__table-row {
-      width: 100%;
+      div {
+        padding-left: 10px;
+      }
 
       div:nth-child(1) {
         width: 120px;
@@ -112,8 +148,46 @@
       }
 
       div:nth-child(6) {
-
         flex-grow: 1;
+      }
+    }
+
+    .vacancies-inner__table-row {
+      width: 100%;
+      border-bottom: 1px solid @border-color;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      div:nth-child(1) {
+        width: 120px;
+      }
+
+      div:nth-child(2) {
+        width: 244px;
+      }
+
+      div:nth-child(3) {
+        width: 140px;
+      }
+
+      div:nth-child(4) {
+        width: 210px;
+      }
+
+      div:nth-child(5) {
+        width: 170px;
+      }
+
+      div:nth-child(6) {
+        flex-grow: 1;
+
+        .vacancies-inner__form-label {
+          &::after {
+            display: none;
+          }
+        }
       }
 
       .vacancies-inner__form-label {
@@ -129,11 +203,282 @@
           top: 10%;
           right: 0;
         }
+      }
 
-        &:last-child {
-          // &::after {
-          //   display: none;
-          // }
+      .vacancies-inner__form-input {
+        border: none;
+      }
+    }
+  }
+}
+
+.vacancies-inner__form-wrapper--education {
+  @media screen and (min-width: @medium) {
+    .vacancies-inner__input-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .vacancies-inner__form-label {
+      width: 100%;
+      max-width: 48%;
+      margin-right: 10px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  @media screen and (min-width: @extra-large) {
+    .vacancies-inner__form-label {
+      width: 100%;
+      max-width: 345px;
+      margin-right: auto;
+      margin-left: 0;
+
+      &:nth-child(2n) {
+        margin-right: auto;
+        margin-left: 0;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .vacancies-inner__table {
+    width: 87vw;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: @medium) {
+      width: 93vw;
+    }
+
+    @media screen and (min-width: @extra-large) {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .vacancies-inner__table-content {
+      border: 1px solid @border-color;
+      border-radius: 6px;
+      padding-left: 5px;
+      padding-right: 5px;
+      width: 1142px;
+
+      @media screen and (min-width: @extra-large) {
+        width: 1130px;
+      }
+    }
+
+    .vacancies-inner__form-label {
+      margin-bottom: 0;
+    }
+
+    .vacancies-inner__table-title-row {
+      width: 1142px;
+
+      @media screen and (min-width: @extra-large) {
+        width: 1130px;
+      }
+
+      div {
+        padding-left: 10px;
+      }
+
+      div:nth-child(1) {
+        width: 140px;
+      }
+
+      div:nth-child(2) {
+        width: 140px;
+      }
+
+      div:nth-child(3) {
+        flex-grow: 1;
+      }
+
+      div:nth-child(4) {
+        flex-grow: 1;
+      }
+    }
+
+    .vacancies-inner__table-row {
+      width: 100%;
+      border-bottom: 1px solid @border-color;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      div:nth-child(1) {
+        width: 140px;
+      }
+
+      div:nth-child(2) {
+        width: 140px;
+      }
+
+      div:nth-child(3) {
+        flex-grow: 1;
+      }
+
+      div:nth-child(4) {
+        flex-grow: 1;
+
+        .vacancies-inner__form-label {
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      .vacancies-inner__form-label {
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          height: 80%;
+          width: 1px;
+          background-color: @border-color;
+          position: absolute;
+          top: 10%;
+          right: 0;
+        }
+      }
+
+      .vacancies-inner__form-input {
+        border: none;
+      }
+    }
+  }
+}
+
+.vacancies-inner__form-wrapper--labor-activity {
+  .vacancies-inner__table {
+    width: 87vw;
+    overflow-x: scroll;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: @medium) {
+      width: 93vw;
+    }
+
+    @media screen and (min-width: @extra-large) {
+      width: 100%;
+      overflow-x: auto;
+    }
+
+    .vacancies-inner__table-content {
+      border: 1px solid @border-color;
+      border-radius: 6px;
+      padding-left: 5px;
+      padding-right: 5px;
+      width: 1142px;
+
+      @media screen and (min-width: @extra-large) {
+        width: 1130px;
+      }
+    }
+
+    .vacancies-inner__form-label {
+      margin-bottom: 0;
+    }
+
+    .vacancies-inner__table-title-row {
+      width: 1142px;
+
+      @media screen and (min-width: @extra-large) {
+        width: 1130px;
+      }
+
+      div {
+        padding-left: 10px;
+      }
+
+      div:nth-child(1) {
+        width: 140px;
+      }
+
+      div:nth-child(2) {
+        width: 140px;
+      }
+
+      div:nth-child(3) {
+        width: 244px;
+      }
+
+      div:nth-child(4) {
+        width: 140px;
+      }
+
+      div:nth-child(5) {
+        width: 250px;
+      }
+
+
+      div:nth-child(6) {
+        flex-grow: 1;
+      }
+    }
+
+    .vacancies-inner__table-row {
+      width: 100%;
+      border-bottom: 1px solid @border-color;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      div:nth-child(1) {
+        width: 140px;
+      }
+
+      div:nth-child(2) {
+        width: 140px;
+      }
+
+      div:nth-child(3) {
+        width: 244px;
+      }
+
+      div:nth-child(4) {
+        width: 140px;
+      }
+
+      div:nth-child(5) {
+        width: 250px;
+      }
+
+      div:nth-child(6) {
+        flex-grow: 1;
+
+        .vacancies-inner__form-label {
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      .vacancies-inner__form-label {
+        position: relative;
+
+        &::after {
+          content: "";
+          display: block;
+          height: 80%;
+          width: 1px;
+          background-color: @border-color;
+          position: absolute;
+          top: 10%;
+          right: 0;
         }
       }
 
@@ -153,4 +498,140 @@
 .vacancies-inner__table-row {
   display: flex;
   justify-content: space-between;
+}
+
+.vacancies-inner__form-file-wrapper {
+  position: relative;
+  display: block;
+  width: 88px;
+  height: 66px;
+  background-color: @gray;
+  border: 1px solid @border-color;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid @brown;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::after {
+    content: "+";
+    font-size: 30px;
+    line-height: 1;
+    font-weight: normal;
+    color: @brown;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-46%, -58%);
+  }
+}
+
+.vacancies-inner__form-file {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  font-size: 0;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.vacancies-inner__form-submit-btn {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.vacancies-inner__form-wrapper--general-information {
+  @media screen and (min-width: @medium) {
+    .vacancies-inner__input-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .vacancies-inner__form-label {
+      width: 100%;
+      max-width: 48%;
+      margin-right: 10px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  @media screen and (min-width: @extra-large) {
+    .vacancies-inner__form-label {
+      width: 100%;
+      max-width: 345px;
+      margin-right: auto;
+      margin-left: 0;
+
+      &:nth-child(2n) {
+        margin-right: auto;
+        margin-left: 0;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+.vacancies-inner__form-wrapper--additional-info {
+  @media screen and (min-width: @medium) {
+    .vacancies-inner__input-wrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .vacancies-inner__form-label {
+      width: 100%;
+      max-width: 48%;
+      margin-right: 10px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  @media screen and (min-width: @extra-large) {
+    .vacancies-inner__form-label {
+      width: 100%;
+      max-width: 345px;
+      margin-right: auto;
+      margin-left: 0;
+
+      &:nth-child(2n) {
+        margin-right: auto;
+        margin-left: 0;
+      }
+
+      &:nth-child(3n) {
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      &:nth-child(4) {
+        margin-right: 47.5px;
+      }
+    }
+  }
 }
