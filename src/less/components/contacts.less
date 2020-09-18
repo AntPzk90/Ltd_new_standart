@@ -1,0 +1,135 @@
+.contacts__main {
+  background-color: @gray;
+}
+
+.contacts__main-wrapper {
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  @media screen and (min-width: @extra-large) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.contacts__title {
+  @media screen and (min-width: @extra-large) {
+    font-size: 65px;
+    line-height: 72px;
+  }
+}
+
+.contacts__dscr {
+  font-weight: normal;
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.contacts__list-wrapper {
+  @media screen and (min-width: @extra-large) {
+    width: 100%;
+    max-width: 570px;
+  }
+}
+
+.contacts__list {
+  border-bottom: 1px solid @border-color;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: @medium) {
+    display: flex;
+  }
+}
+
+.contacts__list-item {
+  @media screen and (min-width: @medium) {
+    &:nth-child(1) {
+      margin-right: 100px;
+    }
+  }
+}
+
+.contacts__tel,
+.contacts__email {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: @bellota;
+  line-height: 29px;
+  color: @black;
+  margin-bottom: 10px;
+  position: relative;
+  padding-right: 20px;
+
+  &:hover {
+    color: @brown;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.contacts__form-wrapper {
+  @media screen and (min-width: @extra-large) {
+    width: 100%;
+    max-width: 470px;
+  }
+}
+
+.contacts__form {
+  background-color: @white;
+  padding: 20px 14px;
+  border: 1px solid @border-color;
+  border-radius: 6px;
+
+  @media screen and (min-width: @medium) {
+    padding: 18px 18px;
+  }
+}
+
+.contacts__bold-txt {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: @bellota;
+  line-height: 29px;
+  color: @black;
+  margin-bottom: 10px;
+  position: relative;
+  padding-right: 20px;
+}
+
+.contacts__txt {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: @medium) {
+    width: 60%;
+  }
+}
+
+.contacts__form-label {
+  display: block;
+  margin-bottom: 10px;
+
+  .contacts__form-input {
+    background-color: transparent;
+    border: 1px solid @border-color;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.contacts__form-submit-btn {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.contacts__form-label--mess {
+  .contacts__form-input {
+    min-height: 188px;
+  }
+}

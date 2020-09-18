@@ -1,0 +1,148 @@
+.cargo-owner-profile {
+  background-color: @gray;
+}
+
+.cargo-owner-profile__main-wrapper {
+  padding-top: 55px;
+  padding-bottom: 75px;
+}
+
+
+.cargo-owner-profile__title {
+  font-size: 26px;
+  line-height: 35px;
+}
+
+.cargo-owner-profile__title-number {
+  color: @brown;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: bold;
+  font-family: @bellota;
+  margin-bottom: 10px;
+
+  &::before {
+    content: "№";
+  }
+}
+
+.cargo-owner-profile__main-dscr {
+  font-size: 17px;
+  line-height: 26px;
+  color: @black;
+
+  @media screen and (min-width: @medium) {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    max-width: 470px;
+  }
+}
+
+.cargo-owner-profile__wrapper-inner {
+  margin-top: 20px;
+
+  @media screen and (min-width: @extra-large) {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.cargo-owner-profile__info-wrapper {
+  width: 100%;
+  max-width: 470px;
+}
+
+.cargo-owner-profile__list-wrapper {
+  padding: 20px;
+  border: 1px solid @border-color;
+  border-radius: 6px;
+  background-color: @white;
+
+  @media screen and (min-width: @medium) {
+    min-height: 300px;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    width: 630px;
+  }
+}
+
+.cargo-owner-profile__list-titile {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: @bellota;
+  line-height: 29px;
+  color: @black;
+}
+
+.cargo-owner-profile__list {
+  @media screen and (min-width: @medium) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.cargo-owner-profile__list-item {
+  padding-top: 20px;
+  border-bottom: 1px solid @border-color;
+  position: relative;
+  padding-bottom: 10px;
+
+  &:last-child {
+    border: none;
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: @medium) {
+    width: 100%;
+    max-width: 290px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    width: 100%;
+    max-width: 250px;
+  }
+}
+
+.cargo-owner-profile__small-txt {
+  display: block;
+  font-size: 12px;
+}
+
+.cargo-owner-profile__txt {
+  font-size: 13px;
+  color: @black;
+}
+
+a.cargo-owner-profile__txt {
+  &:hover {
+    color: @brown;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.cargo-owner-profile__salory {
+  font-size: 17px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: @bellota;
+  color: @black;
+}
+
+.cargo-owner-profile__paragraph {
+  margin-top: 0;
+  margin-bottom: 20px;
+}

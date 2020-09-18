@@ -1,0 +1,159 @@
+.faq__main {
+  background-color: @gray;
+}
+
+.faq__main-wrapper {
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  @media screen and (min-width: @extra-large) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.faq__title {
+  @media screen and (min-width: @extra-large) {
+    font-size: 65px;
+    line-height: 72px;
+  }
+}
+
+.faq__dscr {
+  font-weight: normal;
+  width: 400px;
+  margin-bottom: 30px;
+}
+
+.faq__list-wrapper {
+  @media screen and (min-width: @extra-large) {
+    width: 100%;
+    max-width: 570px;
+  }
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+
+  .faq__list-item {
+    border-top: 1px solid @border-color;
+    padding-bottom: 20px;
+
+    &::after {
+      display: none;
+    }
+
+    @media screen and (min-width: @medium) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}
+
+.faq__bold-txt {
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  font-family: @bellota;
+  line-height: 29px;
+  color: @black;
+  margin-bottom: 10px;
+  position: relative;
+  padding-right: 20px;
+
+  &::after {
+    content: "+";
+    display: block;
+    font-size: 40px;
+    color: @brown;
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    right: 20px;
+  }
+}
+
+.faq__list-item--active {
+  .faq__bold-txt {
+    &::after {
+      content: "-";
+      display: block;
+      font-size: 40px;
+      color: @brown;
+      width: 0;
+      height: 0;
+      background-color: transparent;
+      position: absolute;
+      top: 0;
+      right: 20px;
+    }
+  }
+}
+
+.faq__txt {
+  display: none;
+}
+
+.faq__form {
+  .faq__bold-txt {
+    &::after {
+      display: none;
+    }
+  }
+
+  .faq__txt {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+.faq__list-item:first-child {
+  .faq__txt {
+    display: block;
+  }
+}
+
+.faq__form-wrapper {
+  @media screen and (min-width: @extra-large) {
+    width: 100%;
+    max-width: 470px;
+  }
+}
+
+.faq__form {
+  background-color: @white;
+  padding: 20px 14px;
+  border: 1px solid @border-color;
+  border-radius: 6px;
+
+  @media screen and (min-width: @medium) {
+    padding: 18px 18px;
+  }
+}
+
+.faq__form-label {
+  display: block;
+  margin-bottom: 10px;
+
+  .faq__form-input {
+    background-color: transparent;
+    border: 1px solid @border-color;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.faq__form-submit-btn {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.faq__form-label--mess {
+  .faq__form-input {
+    min-height: 188px;
+  }
+}
