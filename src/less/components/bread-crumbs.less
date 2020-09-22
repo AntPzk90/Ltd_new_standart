@@ -1,0 +1,22 @@
+.bread-crumbs {
+  padding-top: 30px;
+  padding-bottom: 18px;
+}
+
+.bread-crumbs__list {
+  display: flex;
+}
+
+.bread-crumbs__list-item {
+  margin-right: 5px;
+
+  &::after {
+    content: "-";
+  }
+
+  &:last-child {
+    &::after {
+      content: "";
+    }
+  }
+}

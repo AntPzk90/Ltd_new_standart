@@ -1,0 +1,114 @@
+.inner-navigation {
+  position: relative;
+}
+
+.inner-navigation__fixed-wrapper {
+  display: flex;
+  top: 0;
+  left: 0;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  height: 52px;
+  background-color: #fcfbfb;
+  border-bottom: 1px solid @border-color;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.inner-navigation__active-page {
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: bold;
+  font-family: @bellota;
+  color: @black;
+}
+
+
+.inner-navigation__fixed-wrapper--fixed {
+  position: fixed;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+  margin-left: 0;
+}
+
+.inner-navigation-btn {
+  padding-right: 20px;
+  position: relative;
+
+  &::before {
+    content: "Eщё";
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 6px;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    background-image: url(../img/dropdown-arrow.png);
+    background-size: 11px 6px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+}
+
+.inner-navigation-btn--active {
+  &::before {
+    content: "Скрыть";
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 6px;
+    position: absolute;
+    top: 7px;
+    right: 0;
+    background-image: url(../img/dropdown-arrow.png);
+    background-size: 11px 6px;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    transform: rotate(-180deg);
+  }
+}
+
+.inner-navigation__list--fixed {
+  position: fixed;
+  background-color: @white;
+  top: 52px;
+  left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 2;
+}
+
+.inner-navigation__list {
+  display: none;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  background-color: @white;
+}
+
+.inner-navigation__list-item {
+  padding: 10px 35px;
+}
+
+.inner-navigation__list-item--active {
+  background-color: @gray;
+  border-left: 1px solid @brown;
+
+  .inner-navigation__list-link {
+    color: @brown;
+  }
+}
+
+.inner-navigation__list-link {
+  color: @text-color;
+  white-space: nowrap;
+}
