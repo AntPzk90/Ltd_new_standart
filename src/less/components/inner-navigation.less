@@ -15,6 +15,10 @@
   border-bottom: 1px solid @border-color;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (min-width: @extra-large) {
+    display: none;
+  }
 }
 
 .inner-navigation__active-page {
@@ -34,12 +38,13 @@
   margin-left: 0;
 }
 
-.inner-navigation-btn {
+.inner-navigation__btn {
   padding-right: 20px;
   position: relative;
 
   &::before {
     content: "Eщё";
+    color: @black;
   }
 
   &::after {
@@ -57,7 +62,7 @@
   }
 }
 
-.inner-navigation-btn--active {
+.inner-navigation__btn--active {
   &::before {
     content: "Скрыть";
   }
@@ -93,10 +98,25 @@
   width: calc(100% + 30px);
   margin-left: -15px;
   background-color: @white;
+
+  @media screen and (min-width: @extra-large) {
+    display: block;
+    width: 100%;
+    border: 1px solid @border-color;
+    margin-left: 0;
+  }
 }
 
 .inner-navigation__list-item {
   padding: 10px 35px;
+
+  @media screen and (min-width: @extra-large) {
+    border-bottom: 1px solid @border-color;
+
+    &:last-child {
+      border: none;
+    }
+  }
 }
 
 .inner-navigation__list-item--active {

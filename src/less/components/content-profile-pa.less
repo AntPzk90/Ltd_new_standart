@@ -1,0 +1,209 @@
+.content-profile-pa__mini-title {
+  display: block;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: bold;
+  font-family: @bellota;
+  color: @black;
+}
+
+.content-profile-pa__form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+
+  .content-profile-pa__form-input {
+    background-color: transparent;
+    border: 1px solid @border-color;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.content-profile-pa__avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid @brown;
+  position: relative;
+  margin-right: 10px;
+}
+
+.content-profile-pa__avatar-img {
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.content-profile-pa__avatar-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.content-profile-pa__form-file-wrapper {
+  position: relative;
+  font-weight: 500;
+  color: @brown;
+}
+
+.content-profile-pa__form-file {
+  cursor: pointer;
+  position: absolute;
+  width: 100%;
+  font-size: 0;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.content-profile-pa__wrapper-main-data,
+.content-profile-pa__wrapper-contact-info,
+.content-profile-pa__wrapper-requisites,
+.content-profile-pa__wrapper-documents,
+.content-profile-pa__wrapper-additionally {
+  background-color: @white;
+  border: 1px solid @border-color;
+  padding: 15px 10px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+
+  textarea {
+    min-height: 88px;
+  }
+
+  @media screen and (min-width: @medium) {
+    padding: 20px;
+  }
+}
+
+.content-profile-pa__wrapper-main-data {
+  @media screen and (min-width: @medium) {
+    .content-profile-pa__wrapper-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .content-profile-pa__form-label {
+      width: 100%;
+      max-width: 48.5%;
+      margin-left: 10px;
+
+      &:nth-child(2n) {
+        margin-left: 0;
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.content-profile-pa__wrapper-contact-info {
+  @media screen and (min-width: @medium) {
+    .content-profile-pa__wrapper-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .content-profile-pa__form-label {
+      width: 100%;
+      max-width: 32%;
+
+      &:first-child {
+        max-width: 100%;
+        margin-left: 0;
+      }
+
+      &:last-child {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.content-profile-pa__wrapper-requisites {
+  @media screen and (min-width: @medium) {
+    .content-profile-pa__wrapper-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .content-profile-pa__form-label {
+      width: 100%;
+      max-width: 48.5%;
+      margin-right: 10px;
+
+      &:nth-child(2n) {
+        margin-right: 0;
+        margin-left: 10px;
+      }
+    }
+
+    .content-profile-pa__checkbox-list {
+      .content-profile-pa__form-label {
+        width: auto;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+.content-profile-pa__wrapper-documents {
+  @media screen and (min-width: @medium) {
+    .content-profile-pa__wrapper-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .content-profile-pa__form-label {
+        width: 32.5%;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.content-profile-pa__checkbox-list {
+  @media screen and (min-width: @medium) {
+    display: flex;
+  }
+}
+
+.content-profile-pa__checkbox-list-item {
+  margin-right: 20px;
+}
+
+.content-profile-pa__form-label--file {
+  .content-profile-pa__form-file-delete-link {
+    display: none;
+  }
+}
+
+.content-profile-pa__form-label--file-active {
+  .content-profile-pa__form-file-wrapper {
+    display: none;
+  }
+
+  .content-profile-pa__form-file-delete-link {
+    display: inline;
+  }
+
+  .content-profile-pa__form-file-indicator {
+    color: @brown;
+    text-decoration: underline;
+  }
+}
+
+.content-profile-pa__form-btn {
+  width: 100%;
+}
+
+.content-profile-pa__form-btn-submit {
+  width: 100%;
+}

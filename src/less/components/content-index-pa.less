@@ -46,6 +46,24 @@
   padding: 15px 10px;
   background-color: @white;
   margin-bottom: 20px;
+
+  @media screen and (min-width: @medium) {
+    padding: 20px;
+  }
+
+  .content-index-pa__wrapper-inner {
+    @media screen and (min-width: @medium) {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid @border-color;
+
+      &:last-child {
+        border: none;
+        padding-top: 20px;
+        justify-content: flex-start;
+      }
+    }
+  }
 }
 
 .content-index-pa__wrapper-bottom {
@@ -53,6 +71,12 @@
   border-radius: 6px;
   padding: 15px 10px;
   background-color: @white;
+
+  @media screen and (min-width: @extra-large) {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .content-index-pa__mini-title {
@@ -64,8 +88,19 @@
   color: @black;
 }
 
+.content-index-pa__balance {
+  @media screen and (min-width: @medium) {
+    display: flex;
+    min-width: 240px;
+  }
+}
+
 .content-index-pa__balance-txt-wrapper {
   margin-bottom: 10px;
+
+  @media screen and (min-width: @medium) {
+    width: 120px;
+  }
 }
 
 .content-index-pa__balance-txt {
@@ -91,15 +126,31 @@
 .content-index-pa__balance-btn {
   width: 100%;
   margin-bottom: 10px;
+
+  @media screen and (min-width: @medium) {
+    max-width: 150px;
+    height: 32px;
+  }
 }
 
 .content-index-pa__user-info-list {
-
+  @media screen and (min-width: @medium) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .content-index-pa__user-info-item {
   padding-top: 6px;
   padding-bottom: 8px;
+
+  @media screen and (min-width: @medium) {
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 
   .content-index-pa__user-info-txt:first-child {
     font-size: 12px;
@@ -108,11 +159,17 @@
   .content-index-pa__user-info-txt:last-child {
     font-size: 13px;
     color: @black;
+    padding-left: 10px;
   }
 }
 
 .content-index-pa__btn {
   width: 100%;
+
+  @media screen and (min-width: @medium) {
+    height: 32px;
+    max-width: 140px;
+  }
 }
 
 .content-index-pa__link {
@@ -122,10 +179,19 @@
   color: @brown;
   padding: 12px;
   font-weight: bold;
+
+  @media screen and (min-width: @medium) {
+    height: 32px;
+    max-width: 140px;
+    padding: 4px;
+  }
 }
 
 .content-index-pa__contacts-list {
-
+  @media screen and (min-width: @extra-large) {
+    width: 100%;
+    max-width: 320px;
+  }
 }
 
 .content-index-pa__contacts-list-item {
@@ -147,10 +213,24 @@
   &:last-child {
     border: none;
   }
+
+  .content-index-pa__contacts-link {
+    color: @brown;
+    text-decoration: underline;
+  }
 }
 
 .content-index-pa__requisites-list {
+  @media screen and (min-width: @medium) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
+  @media screen and (min-width: @extra-large) {
+    width: 100%;
+    max-width: 430px;
+  }
 }
 
 .content-index-pa__requisites-list-item {
@@ -171,5 +251,9 @@
 
   &:last-child {
     border: none;
+  }
+
+  @media screen and (min-width: @medium) {
+    width: 48%;
   }
 }

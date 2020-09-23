@@ -6,16 +6,38 @@
 .personal-area__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: @extra-large) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }
 
 .personal-area__nav {
   order: 1;
+
+  @media screen and (min-width: @extra-large) {
+    order: 2;
+    width: 100%;
+    max-width: 220px;
+    margin-right: auto;
+  }
 }
 
 .personal-area__bread-crumbs {
   order: 2;
+
+  @media screen and (min-width: @extra-large) {
+    order: 1;
+    width: 100%;
+  }
 }
 
 .personal-area__content {
   order: 3;
+
+  @media screen and (min-width: @extra-large) {
+    width: 100%;
+    max-width: 900px;
+  }
 }
