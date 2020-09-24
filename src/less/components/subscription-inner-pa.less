@@ -1,0 +1,74 @@
+.subscription-inner-pa__wrapper-form {
+  background-color: @white;
+  border: 1px solid @border-color;
+  padding: 15px 10px;
+  border-radius: 6px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: @medium) {
+    padding: 20px;
+  }
+}
+
+.subscription-inner-pa__wrapper-inner {
+  @media screen and (min-width: @medium) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+
+.subscription-inner-pa__form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+
+  .subscription-inner-pa__form-input {
+    background-color: transparent;
+    border: 1px solid @border-color;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media screen and (min-width: @medium) {
+    width: 48%;
+
+    &:first-child {
+      width: 100%;
+    }
+  }
+}
+
+.subscription-inner-pa__checkbox-list {
+  @media screen and (min-width: @medium) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.subscription-inner-pa__checkbox-list-item {
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: @medium) {
+    width: 100%;
+    max-width: 48%;
+  }
+}
+
+.subscription-inner-pa__checkbox-list-txt {
+  font-size: 12px;
+}
+
+.subscription-inner-pa__checkbox-list-profile-link {
+  color: @brown;
+  text-decoration: underline;
+}
+
+.subscription-inner-pa__btn {
+  width: 100%;
+}

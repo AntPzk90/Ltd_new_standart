@@ -194,7 +194,7 @@
         </div>
         <div class="personal-area__nav inner-navigation">
           <div class="inner-navigation__fixed-wrapper">
-            <p class="inner-navigation__active-page">Главная</p>
+            <p class="inner-navigation__active-page">Настройки профиля</p>
             <a href="#" class="inner-navigation__btn"></a>
           </div>
           <ul class="inner-navigation__list">
@@ -208,28 +208,28 @@
               <a href="subscription-pa.html" class="inner-navigation__list-link">Подписки</a>
             </li>
             <li class="inner-navigation__list-item">
-              <a href="#" class="inner-navigation__list-link">Избранное</a>
+              <a href="favorites-pa.html" class="inner-navigation__list-link">Избранное</a>
             </li>
             <li class="inner-navigation__list-item">
-              <a href="#" class="inner-navigation__list-link">Мои грузы</a>
+              <a href="cargo-pa.html" class="inner-navigation__list-link">Мои грузы</a>
             </li>
             <li class="inner-navigation__list-item">
-              <a href="#" class="inner-navigation__list-link">Мой транспорт</a>
+              <a href="my-transport-pa.html" class="inner-navigation__list-link">Мой транспорт</a>
             </li>
             <li class="inner-navigation__list-item">
-              <a href="#" class="inner-navigation__list-link">Мои водители</a>
+              <a href="my-drivers-pa.html" class="inner-navigation__list-link">Мои водители</a>
             </li>
             <li class="inner-navigation__list-item">
-              <a href="#" class="inner-navigation__list-link">Доставляемые грузы</a>
+              <a href="delivered-pa.html" class="inner-navigation__list-link">Доставляемые грузы</a>
             </li>
             <li class="inner-navigation__list-item">
-              <a href="#" class="inner-navigation__list-link">Архив грузов</a>
+              <a href="archive-cargo-pa.html" class="inner-navigation__list-link">Архив грузов</a>
             </li>
             <li class="inner-navigation__list-item">
-              <a href="#" class="inner-navigation__list-link">Сообщения</a>
+              <a href="messages-pa.html" class="inner-navigation__list-link">Сообщения</a>
             </li>
             <li class="inner-navigation__list-item">
-              <a href="#" class="inner-navigation__list-link">История платежей</a>
+              <a href="payments-pa.html" class="inner-navigation__list-link">История платежей</a>
             </li>
           </ul>
         </div>
@@ -379,25 +379,26 @@
                   </label>
                 </div>
                 <ul class="content-profile-pa__checkbox-list form__list">
-                    <li class="content-profile-pa__checkbox-list-item">
-                      <label class="content-profile-pa__form-label form__label">
-                        <input type="checkbox" name="served" class="content-profile-pa__form-checkbox form__checkbox">
-                        Являюсь платильщиком НДС
-                      </label>
-                    </li>
-                    <li class="content-profile-pa__checkbox-list-item">
-                      <label class="content-profile-pa__form-label form__label">
-                        <input type="checkbox" name="unsift" class="content-profile-pa__form-checkbox form__checkbox">
-                        Не являюсь платильщиком НДС
-                      </label>
-                    </li>
-                  </ul>
+                  <li class="content-profile-pa__checkbox-list-item">
+                    <label class="content-profile-pa__form-label form__label">
+                      <input type="checkbox" name="served" class="content-profile-pa__form-checkbox form__checkbox">
+                      Являюсь платильщиком НДС
+                    </label>
+                  </li>
+                  <li class="content-profile-pa__checkbox-list-item">
+                    <label class="content-profile-pa__form-label form__label">
+                      <input type="checkbox" name="unsift" class="content-profile-pa__form-checkbox form__checkbox">
+                      Не являюсь платильщиком НДС
+                    </label>
+                  </li>
+                </ul>
               </div>
               <div class="content-profile-pa__wrapper-documents">
                 <b class="content-profile-pa__mini-title">Документы</b>
                 <p class="content-profile-pa__dscr">Для подтверждения своего статуса пожалуйста загрузите документы!</p>
                 <div class="content-profile-pa__wrapper-inner">
-                  <label class="content-profile-pa__form-label content-profile-pa__form-label--file content-profile-pa__form-label--passpot form__label">
+                  <label
+                    class="content-profile-pa__form-label content-profile-pa__form-label--file content-profile-pa__form-label--passpot form__label">
                     Паспорт
                     <p class="content-profile-pa__form-file-indicator">
                       Документ не загружен
@@ -410,7 +411,8 @@
                       Удалить
                     </a>
                   </label>
-                  <label class="content-profile-pa__form-label content-profile-pa__form-label--file content-profile-pa__form-label--inn form__label">
+                  <label
+                    class="content-profile-pa__form-label content-profile-pa__form-label--file content-profile-pa__form-label--inn form__label">
                     Свидетельство ИНН
                     <p class="content-profile-pa__form-file-indicator">
                       Документ не загружен
@@ -423,7 +425,8 @@
                       Удалить
                     </a>
                   </label>
-                  <label class="content-profile-pa__form-label content-profile-pa__form-label--file content-profile-pa__form-label--ogrn  content-profile-pa__form-label--file-active form__label">
+                  <label
+                    class="content-profile-pa__form-label content-profile-pa__form-label--file content-profile-pa__form-label--ogrn  content-profile-pa__form-label--file-active form__label">
                     Свидетельство ОГРН
                     <p class="content-profile-pa__form-file-indicator">
                       ОГРН Логистика.pdf
@@ -449,12 +452,12 @@
                   </label>
                   <label class="content-profile-pa__form-label form__label">
                     Полное описание
-                    <textarea name="additional-long"
-                      class="content-profile-pa__form-input form__text-input"></textarea>
+                    <textarea name="additional-long" class="content-profile-pa__form-input form__text-input"></textarea>
                   </label>
                 </div>
               </div>
-              <button type="submit" class="content-profile-pa__form-btn-submit btn btn--brown">Сохранить изменения</button>
+              <button type="submit" class="content-profile-pa__form-btn-submit btn btn--brown">Сохранить
+                изменения</button>
             </form>
           </div>
         </div>

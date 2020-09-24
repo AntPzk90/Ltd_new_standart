@@ -1,0 +1,502 @@
+.table-pa__wrapper {
+  width: 96vw;
+  overflow-x: scroll;
+  margin-bottom: 20px;
+  padding: 20px;
+  padding-top: 12px;
+  background-color: @white;
+  border: 1px solid @border-color;
+  border-right: none;
+  border-radius: 6px  0 0 6px;
+
+
+  @media screen and (min-width: @medium) {
+    width: 98vw;
+  }
+
+  @media screen and (min-width: @extra-large) {
+    width: 100%;
+    overflow-x: auto;
+    border-right: 1px solid @border-color;
+    border-radius: 6px 6px 6px 6px;
+  }
+
+  .table-pa__content {
+    border-top: 1px solid @border-color;
+    width: 860px;
+  }
+
+  .table-pa__title-row {
+    width: 860px;
+    display: flex;
+    padding-bottom: 7px;
+
+    .table-pa__title-item {
+      font-size: 12px;
+
+      &:nth-child(1) {
+        width: 84px;
+      }
+
+      &:nth-child(2) {
+        width: 300px;
+      }
+
+      &:nth-child(3) {
+        width: 200px;
+      }
+
+      &:nth-child(4) {
+        width: 100px;
+      }
+
+      &:nth-child(5) {
+        width: 130px;
+      }
+
+      &:nth-child(6) {
+        flex-grow: 1;
+      }
+    }
+  }
+
+  .table-pa__row {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid @border-color;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    transition: all ease-in 0.3s;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &:hover {
+      background-color: @gray;
+
+      .table-pa__item {
+        &:nth-child(2) {
+          color: @brown;
+        }
+      }
+    }
+
+    .table-pa__item {
+      &:nth-child(1) {
+        width: 84px;
+      }
+
+      &:nth-child(2) {
+        width: 300px;
+      }
+
+      &:nth-child(3) {
+        width: 200px;
+      }
+
+      &:nth-child(4) {
+        width: 100px;
+      }
+
+      &:nth-child(5) {
+        width: 130px;
+      }
+
+      &:nth-child(6) {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+
+.table-pa--5 {
+  .table-pa__title-row {
+    .table-pa__title-item {
+      font-size: 12px;
+
+      &:nth-child(1) {
+        width: 84px;
+      }
+
+      &:nth-child(2) {
+        width: 300px;
+      }
+
+      &:nth-child(3) {
+        width: 200px;
+      }
+
+      &:nth-child(4) {
+        width: 100px;
+      }
+
+      &:nth-child(5) {
+        flex-grow: 1;
+        padding-left: 30px;
+      }
+    }
+  }
+
+  .table-pa__row {
+    .table-pa__item {
+      &:nth-child(1) {
+        width: 84px;
+      }
+
+      &:nth-child(2) {
+        width: 300px;
+      }
+
+      &:nth-child(3) {
+        width: 200px;
+      }
+
+      &:nth-child(4) {
+        width: 100px;
+      }
+
+      &:nth-child(5) {
+        flex-grow: 1;
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+    }
+  }
+}
+
+.table-pa--4 {
+  .table-pa__title-row {
+    .table-pa__title-item {
+      font-size: 12px;
+
+      &:nth-child(1) {
+        width: 84px;
+      }
+
+      &:nth-child(2) {
+        flex-grow: 1;
+      }
+
+      &:nth-child(3) {
+        width: 170px;
+      }
+
+      &:nth-child(4) {
+        width: 100px;
+      }
+    }
+  }
+
+  .table-pa__row {
+    .table-pa__item {
+      &:nth-child(1) {
+        width: 84px;
+      }
+
+      &:nth-child(2) {
+        flex-grow: 1;
+      }
+
+      &:nth-child(3) {
+        width: 170px;
+      }
+
+      &:nth-child(4) {
+        width: 100px;
+
+        .table-pa__buttons-wrapper {
+          width: 70px;
+        }
+      }
+    }
+  }
+}
+
+.table-pa--deliver-pa {
+  .table-pa__title-row,
+  .table-pa__row {
+    .table-pa__item {
+      &:nth-child(5) {
+        flex-grow: 1;
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+    }
+  }
+}
+
+.table-pa--payments-pa {
+  .table-pa__wrapper {
+    .table-pa__title-row {
+      .table-pa__title-item {
+        font-size: 12px;
+
+        &:nth-child(1) {
+          width: 84px;
+        }
+
+        &:nth-child(2) {
+          width: 130px;
+          flex-grow: 0;
+        }
+
+        &:nth-child(3) {
+          width: 170px;
+        }
+
+        &:nth-child(4) {
+          flex-grow: 1;
+        }
+      }
+    }
+
+    .table-pa__row {
+      .table-pa__item {
+        &:nth-child(1) {
+          width: 84px;
+        }
+
+        &:nth-child(2) {
+          width: 130px;
+          flex-grow: 0;
+        }
+
+        &:nth-child(3) {
+          width: 170px;
+        }
+
+        &:nth-child(4) {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}
+
+.table-pa__buttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-pa__edit {
+  position: relative;
+  display: block;
+  width: 27px;
+  height: 27px;
+  border: 1px solid @brown;
+  border-radius: 4px;
+  background-image: url("../img/edit-icon.png");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  &:hover {
+    background-image: url("../img/edit-icon-active.png");
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.table-pa__delete {
+  position: relative;
+  display: block;
+  width: 27px;
+  height: 27px;
+  border: 1px solid @brown;
+  border-radius: 4px;
+  background-image: url("../img/delete-icon.png");
+  background-size: 15px 19px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  &:hover {
+    background-image: url("../img/delete-icon-active.png")
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  .table__hint {
+    left: -25px;
+  }
+}
+
+.table-pa__copy {
+  position: relative;
+  display: block;
+  width: 27px;
+  height: 27px;
+  border: 1px solid @brown;
+  border-radius: 4px;
+  background-image: url("../img/copy-icon.png");
+  background-size: 15px 15px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  &:hover {
+    background-image: url("../img/copy-icon-active.png")
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.table-pa__archive {
+  position: relative;
+  display: block;
+  width: 27px;
+  height: 27px;
+  border: 1px solid @brown;
+  border-radius: 4px;
+  background-image: url("../img/archive-icon.png");
+  background-size: 19px 17px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  &:hover {
+    background-image: url("../img/archive-icon-active.png")
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.table-pa__user {
+  position: relative;
+  display: block;
+  width: 27px;
+  height: 27px;
+  border: 1px solid @brown;
+  border-radius: 4px;
+  background-image: url("../img/user-table-icon.png");
+  background-size: 14px 16px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  &:hover {
+    background-image: url("../img/user-table-icon-active.png")
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  .table__hint {
+    left: -60px;
+  }
+}
+
+.table-pa__message {
+  position: relative;
+  display: block;
+  width: 27px;
+  height: 27px;
+  border: 1px solid @brown;
+  border-radius: 4px;
+  background-image: url("../img/message-icon.png");
+  background-size: 16px 15px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  &:hover {
+    background-image: url("../img/message-icon-active.png")
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  .table__hint {
+    left: -60px;
+  }
+}
+
+.table-pa__delivered {
+  position: relative;
+  display: block;
+  width: 27px;
+  height: 27px;
+  border: 1px solid @brown;
+  border-radius: 4px;
+  background-image: url("../img/delivered-icon.png");
+  background-size: 21px 16px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+
+  &:hover {
+    background-image: url("../img/delivered-icon-active.png")
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  .table__hint {
+    left: -60px;
+  }
+}
+
+.table-pa__info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  height: 27px;
+  padding-left: 4px;
+  padding-right: 4px;
+  border: 1px solid @brown;
+  border-radius: 4px;
+  color: @brown;
+
+  .table-pa__btn-txt {
+    font-size: 10px;
+    line-height: 10px;
+    display: block;
+  }
+
+  &:hover {
+    background-color: @brown;
+    color: @white;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  .table__hint {
+    left: -60px;
+  }
+}
+
+.table__hint {
+  display: none;
+  position: absolute;
+  background-color: #b2b0ab;
+  box-shadow: 0 8px 9px 0 rgba(40, 39, 28, 0.17);
+  color: @white;
+  white-space: nowrap;
+  padding-left: 5px;
+  padding-right: 5px;
+  top: -30px;
+  left: -70px;
+  border-radius: 4px;
+
+  &::after {
+    content: "";
+    border: 5px solid transparent;
+    border-top-color: #b2b0ab;
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    right: 20px;
+  }
+}
+

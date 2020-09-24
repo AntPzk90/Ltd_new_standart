@@ -50,18 +50,11 @@
 
   &:hover {
     background-color: @gray;
-
-    .subscription-pa__edit {
-      background-image: url("../img/edit-icon-active.png");
-    }
-
-    .subscription-pa__delete {
-      background-image: url("../img/delete-icon-active.png");
-    }
   }
 }
 
 .subscription-pa__edit {
+  position: relative;
   display: block;
   width: 27px;
   height: 27px;
@@ -75,6 +68,7 @@
 
   &:hover {
     opacity: 0.8;
+    background-image: url("../img/edit-icon-active.png");
   }
 
   &:active {
@@ -83,6 +77,7 @@
 }
 
 .subscription-pa__delete {
+  position: relative;
   display: block;
   width: 27px;
   height: 27px;
@@ -96,6 +91,7 @@
 
   &:hover {
     opacity: 0.8;
+    background-image: url("../img/delete-icon-active.png");
   }
 
   &:active {

@@ -28,3 +28,16 @@
 .bread-crumbs__list-item--active {
   color: @black;
 }
+
+.bread-crumbs--subscription-inner-pa {
+  width: 100%;
+  overflow-x: scroll;
+
+  .bread-crumbs__list {
+    width: 400px;
+  }
+
+  @media screen and (min-width: @medium) {
+    overflow-x: auto;
+  }
+}
