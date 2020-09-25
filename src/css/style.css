@@ -6596,14 +6596,17 @@ a.cargo-owner-profile__txt:active {
 .bread-crumbs__list-item--active {
   color: #23211d;
 }
+.bread-crumbs--cargo-pa,
 .bread-crumbs--subscription-inner-pa {
   width: 100%;
   overflow-x: scroll;
 }
+.bread-crumbs--cargo-pa .bread-crumbs__list,
 .bread-crumbs--subscription-inner-pa .bread-crumbs__list {
   width: 400px;
 }
 @media screen and (min-width: 768px) {
+  .bread-crumbs--cargo-pa,
   .bread-crumbs--subscription-inner-pa {
     overflow-x: auto;
   }
@@ -6649,6 +6652,7 @@ a.cargo-owner-profile__txt:active {
   padding-right: 15px;
   width: 100%;
   margin-left: 0;
+  z-index: 20;
 }
 .inner-navigation__btn {
   padding-right: 20px;
@@ -6696,7 +6700,7 @@ a.cargo-owner-profile__txt:active {
   left: 0;
   padding-left: 15px;
   padding-right: 15px;
-  z-index: 2;
+  z-index: 20;
 }
 .inner-navigation__list {
   display: none;
@@ -7986,4 +7990,212 @@ a.cargo-owner-profile__txt:active {
   .payments-pa__btn {
     width: 166px;
   }
+}
+.cargo-pa-inner__mini-title {
+  display: block;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 700;
+  font-family: "Bellota Text", cursive;
+  color: #23211d;
+  margin-bottom: 20px;
+}
+.cargo-pa-inner__form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #aca9a4;
+}
+.cargo-pa-inner__form-label .cargo-pa-inner__form-input {
+  background-color: transparent;
+  border: 1px solid #d9d8d4;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+.cargo-pa-inner__form-label .select2-container--default {
+  width: 100% !important;
+  margin-bottom: 0;
+}
+.cargo-pa-inner__form-label .select2-container--default .select2-selection--single {
+  border: 1px solid #d9d8d4;
+  background-color: #ffffff;
+  height: 34px;
+}
+.cargo-pa-inner__wrapper-main-data,
+.cargo-pa-inner__wrapper-loading-unloading,
+.cargo-pa-inner__wrapper-payment,
+.cargo-pa-inner__wrapper-bargaining {
+  padding: 20px 15px;
+  background-color: #ffffff;
+  border: 1px solid #d9d8d4;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+.cargo-pa-inner__wrapper-main-data textarea,
+.cargo-pa-inner__wrapper-loading-unloading textarea,
+.cargo-pa-inner__wrapper-payment textarea,
+.cargo-pa-inner__wrapper-bargaining textarea {
+  min-height: 88px;
+}
+.cargo-pa-inner__wrapper-main-data sup,
+.cargo-pa-inner__wrapper-loading-unloading sup,
+.cargo-pa-inner__wrapper-payment sup,
+.cargo-pa-inner__wrapper-bargaining sup {
+  font-size: 15px;
+  font-weight: bold;
+  color: #e94139;
+  line-height: 12px;
+}
+.cargo-pa-inner__wrapper-loading-unloading-inner {
+  margin-bottom: 20px;
+}
+.cargo-pa-inner__wrapper-loading-unloading-inner .cargo-pa-inner__wrapper-inner {
+  position: relative;
+  margin-bottom: 20px;
+}
+.cargo-pa-inner__wrapper-loading-unloading-inner .cargo-pa-inner__wrapper-inner .cargo-pa-inner__delete-item {
+  font-size: 12px;
+  font-weight: 500;
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  color: #e94139;
+  border: none;
+  background-color: transparent;
+}
+.cargo-pa-inner__wrapper-bargaining .cargo-pa-inner__checkbox-list .cargo-pa-inner__checkbox-list-item {
+  border-bottom: none;
+}
+.cargo-pa-inner__wrapper-bargaining .cargo-pa-inner__checkbox-list .cargo-pa-inner__form-label {
+  padding-left: 0;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.cargo-pa-inner__wrapper-bargaining .cargo-pa-inner__checkbox-list .cargo-pa-inner__form-checkbox {
+  margin-right: 10px;
+}
+.cargo-pa-inner__checkbox-list-wrapper {
+  width: 100%;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .cargo-pa-inner__checkbox-list-wrapper {
+    max-width: 192px;
+  }
+}
+.cargo-pa-inner__checkbox-list-wrapper .cargo-pa-inner__checkbox-list {
+  font-size: 13px;
+  color: #23211d;
+  display: none;
+  position: absolute;
+  top: 58px;
+  left: 0;
+  background-color: #fbf9f9;
+  overflow-y: scroll;
+  height: 192px;
+  width: 100%;
+  border: 1px solid #d9d8d4;
+  z-index: 10;
+}
+@media screen and (min-width: 768px) {
+  .cargo-pa-inner__checkbox-list-wrapper .cargo-pa-inner__checkbox-list {
+    max-width: 192px;
+  }
+}
+.cargo-pa-inner__checkbox-list-wrapper:nth-child(3) .cargo-pa-inner__checkbox-list {
+  min-height: 133px;
+  height: auto;
+  overflow: auto;
+}
+.cargo-pa-inner__checkbox-list-type-span {
+  font-size: 12px;
+  line-height: 1;
+  color: #aca9a4;
+}
+.cargo-pa-inner__checkbox-list-type-txt {
+  font-size: 13px;
+  color: #23211d;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  margin: 0;
+  background-image: url(../img/dropdown-arrow.png);
+  background-size: 11px 6px;
+  background-position: 95% 15px;
+  background-repeat: no-repeat;
+  border: 1px solid #d9d8d4;
+  border-radius: 3px;
+}
+.cargo-pa-inner__checkbox-list-item {
+  border-bottom: 1px solid #d9d8d4;
+}
+.cargo-pa-inner__checkbox-list-item:last-child {
+  border-bottom: none;
+}
+.cargo-pa-inner__checkbox-list-item .cargo-pa-inner__form-label {
+  padding-left: 10px;
+  padding-right: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.cargo-pa-inner__wrapper-inner--checkboxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.cargo-pa-inner__form-date-wrapper {
+  margin-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.cargo-pa-inner__form-date-wrapper .cargo-pa-inner__form-date-wrapper-txt {
+  margin-top: 0;
+  margin-bottom: 10px;
+  line-height: 1;
+  width: 100%;
+  color: #aca9a4;
+}
+.cargo-pa-inner__form-date-wrapper .datepicker {
+  background-color: #ffffff;
+  border: 1px solid #d9d8d4;
+  width: 100%;
+  max-width: 48%;
+  background-position: 75% 50%;
+  padding-left: 10px;
+  margin-right: auto;
+  text-align: center;
+}
+.cargo-pa-inner__form-date-wrapper .timepicker {
+  background-color: #ffffff;
+  border: 1px solid #d9d8d4;
+  width: 100%;
+  max-width: 48%;
+  background-position: 75% 50%;
+  background-image: url(../img/dropdown-arrow.png);
+  background-size: 10px 6px;
+  background-repeat: no-repeat;
+  padding-left: 10px;
+  text-align: center;
+}
+.cargo-pa-inner__btn-add {
+  width: 100%;
 }

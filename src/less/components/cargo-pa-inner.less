@@ -1,0 +1,219 @@
+.cargo-pa-inner__mini-title {
+  display: block;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 700;
+  font-family: "Bellota Text", cursive;
+  color: #23211d;
+  margin-bottom: 20px;
+}
+
+.cargo-pa-inner__form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: @medium-gray;
+
+  .cargo-pa-inner__form-input {
+    background-color: transparent;
+    border: 1px solid #d9d8d4;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .select2-container--default {
+    width: 100% !important;
+    margin-bottom: 0;
+  }
+
+  .select2-container--default .select2-selection--single {
+    border: 1px solid @border-color;
+    background-color: @white;
+    height: 34px;
+  }
+}
+
+.cargo-pa-inner__wrapper-main-data,
+.cargo-pa-inner__wrapper-loading-unloading,
+.cargo-pa-inner__wrapper-payment,
+.cargo-pa-inner__wrapper-bargaining {
+  padding: 20px 15px;
+  background-color: @white;
+  border: 1px solid @border-color;
+  border-radius: 6px;
+  margin-bottom: 30px;
+
+  textarea {
+    min-height: 88px;
+  }
+
+  sup {
+    font-size: 15px;
+    font-weight: bold;
+    color: @red;
+    line-height: 12px;
+  }
+}
+
+.cargo-pa-inner__wrapper-loading-unloading-inner {
+  margin-bottom: 20px;
+
+  .cargo-pa-inner__wrapper-inner {
+    position: relative;
+    margin-bottom: 20px;
+
+    .cargo-pa-inner__delete-item {
+      font-size: 12px;
+      font-weight: 500;
+      position: absolute;
+      top: 7px;
+      right: 10px;
+      color: @red;
+      border: none;
+      background-color: transparent;
+    }
+  }
+}
+
+.cargo-pa-inner__wrapper-bargaining {
+  .cargo-pa-inner__checkbox-list {
+    .cargo-pa-inner__checkbox-list-item {
+      border-bottom: none;
+    }
+
+    .cargo-pa-inner__form-label {
+      padding-left: 0;
+      justify-content: flex-start;
+    }
+
+    .cargo-pa-inner__form-checkbox {
+      margin-right: 10px;
+    }
+  }
+}
+
+.cargo-pa-inner__checkbox-list-wrapper {
+  width: 100%;
+  border-radius: 3px;
+  position: relative;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: @medium) {
+    max-width: 192px;
+  }
+
+  .cargo-pa-inner__checkbox-list {
+    font-size: 13px;
+    color: @black;
+    display: none;
+    position: absolute;
+    top: 58px;
+    left: 0;
+    background-color: @gray;
+    overflow-y: scroll;
+    height: 192px;
+    width: 100%;
+    border: 1px solid @border-color;
+    z-index: 10;
+
+    @media screen and (min-width: @medium) {
+      max-width: 192px;
+    }
+  }
+
+  &:nth-child(3) {
+    .cargo-pa-inner__checkbox-list {
+      min-height: 133px;
+      height: auto;
+      overflow: auto;
+    }
+  }
+}
+
+.cargo-pa-inner__checkbox-list-type-span {
+  font-size: 12px;
+  line-height: 1;
+  color: @medium-gray;
+}
+
+.cargo-pa-inner__checkbox-list-type-txt {
+  font-size: 13px;
+  color: @black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  margin: 0;
+  background-image: url(../img/dropdown-arrow.png);
+  background-size: 11px 6px;
+  background-position: 95% 15px;
+  background-repeat: no-repeat;
+  border: 1px solid @border-color;
+  border-radius: 3px;
+}
+
+.cargo-pa-inner__checkbox-list-item {
+  border-bottom: 1px solid @border-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  .cargo-pa-inner__form-label {
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+.cargo-pa-inner__wrapper-inner--checkboxes {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.cargo-pa-inner__form-date-wrapper {
+  margin-bottom: 10px;
+  display: flex;
+  flex-wrap: wrap;
+
+  .cargo-pa-inner__form-date-wrapper-txt {
+    margin-top: 0;
+    margin-bottom: 10px;
+    line-height: 1;
+    width: 100%;
+    color: @medium-gray;
+  }
+
+  .datepicker {
+    background-color: @white;
+    border: 1px solid @border-color;
+    width: 100%;
+    max-width: 48%;
+    background-position: 75% 50%;
+    padding-left: 10px;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .timepicker {
+    background-color: @white;
+    border: 1px solid @border-color;
+    width: 100%;
+    max-width: 48%;
+    background-position: 75% 50%;
+    background-image: url(../img/dropdown-arrow.png);
+    background-size: 10px 6px;
+    background-repeat: no-repeat;
+    padding-left: 10px;
+    text-align: center;
+  }
+}
+
+.cargo-pa-inner__btn-add {
+  width: 100%;
+}
