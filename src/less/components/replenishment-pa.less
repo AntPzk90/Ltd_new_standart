@@ -1,0 +1,104 @@
+.replenishment-pa__form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: @medium-gray;
+
+  @media screen and (min-width: @medium) {
+    flex-grow: 1;
+    margin-right: 30px;
+  }
+
+  .replenishment-pa__form-input {
+    background-color: transparent;
+    border: 1px solid #d9d8d4;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.replenishment-pa__form {
+  width: 100%;
+
+  @media screen and (min-width: @medium) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.replenishment-pa__customer {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.replenishment-pa__customer-icon {
+  display: block;
+  margin-top: 10px;
+}
+
+.replenishment-pa__customer-wrapper {
+  margin-left: 10px;
+}
+
+.replenishment-pa__customer-txt {
+  font-size: 12px;
+  color: @medium-gray;
+}
+
+.replenishment-pa__customer-name {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: @bellota;
+  line-height: 26px;
+  color: @black;
+  transition: all ease-in 0.3s;
+
+  &:hover {
+    color: @brown;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.replenishment-pa__wrapper-top {
+  border: 1px solid @border-color;
+  border-radius: 6px;
+  padding: 15px 10px;
+  background-color: @white;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: @medium) {
+    padding: 20px;
+  }
+
+  .replenishment-pa__wrapper-inner {
+    @media screen and (min-width: @medium) {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid @border-color;
+
+      &:last-child {
+        border: none;
+        padding-top: 20px;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+.replenishment-pa__submit-btn {
+  width: 100%;
+
+  @media screen and (min-width: @medium) {
+    max-width: 140px;
+    height: 34px;
+    margin-bottom: 10px;
+  }
+}
