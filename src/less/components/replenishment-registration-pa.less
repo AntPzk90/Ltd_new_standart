@@ -1,0 +1,221 @@
+.replenishment-registration-pa__mini-title {
+  display: block;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 700;
+  font-family: "Bellota Text", cursive;
+  color: #23211d;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: @medium) {
+    width: 100%;
+  }
+}
+
+.replenishment-registration-pa__form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: @medium-gray;
+
+  @media screen and (min-width: @medium) {
+    flex-grow: 1;
+    margin-right: 30px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .replenishment-registration-pa__form-input {
+    background-color: transparent;
+    border: 1px solid #d9d8d4;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.replenishment-registration-pa__form {
+  width: 100%;
+
+  @media screen and (min-width: @medium) {
+
+  }
+}
+
+.replenishment-registration-pa__customer {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.replenishment-registration-pa__customer-icon {
+  display: block;
+  margin-top: 10px;
+}
+
+.replenishment-registration-pa__customer-wrapper {
+  margin-left: 10px;
+}
+
+.replenishment-registration-pa__customer-txt {
+  font-size: 12px;
+  color: @medium-gray;
+}
+
+.replenishment-registration-pa__customer-name {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: @bellota;
+  line-height: 26px;
+  color: @black;
+  transition: all ease-in 0.3s;
+
+  &:hover {
+    color: @brown;
+  }
+
+  &:active {
+    opacity: 0.8;
+  }
+}
+
+.replenishment-registration-pa__wrapper-top {
+  border: 1px solid @border-color;
+  border-radius: 6px;
+  padding: 15px 10px;
+  background-color: @white;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: @medium) {
+    padding: 20px;
+  }
+
+  .replenishment-registration-pa__wrapper-inner {
+    @media screen and (min-width: @medium) {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid @border-color;
+
+      &:last-child {
+        border: none;
+        padding-top: 20px;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+.replenishment-registration-pa__submit-btn {
+  width: 100%;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: @medium) {
+    max-width: 48%;
+    height: 34px;
+    margin-bottom: 0;
+  }
+}
+
+.replenishment-registration-pa__form-wrapper-inner {
+  @media screen and (min-width: @medium) {
+    display: flex;
+    flex-wrap: wrap;
+
+    &:nth-child(2) {
+      display: block;
+    }
+  }
+}
+
+.replenishment-registration-pa__payment-list {
+  @media screen and (min-width: @medium) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.replenishment-registration-pa__payment-list-item {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: @medium) {
+    margin-bottom: 0;
+    width: 48%;
+    min-height: 160px;
+  }
+}
+
+.replenishment-registration-pa__payment-info {
+  border: 1px solid @border-color;
+  border-radius: 6px;
+  padding: 20px 10px;
+
+  @media screen and (min-width: @medium) {
+    height: 100%;
+  }
+}
+
+.replenishment-registration-pa__radio {
+  display: none;
+}
+
+.replenishment-registration-pa__radio:checked + .replenishment-registration-pa__payment-info {
+  border: 1px solid @brown;
+}
+
+.replenishment-registration-pa__bold-txt {
+  display: block;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: "Bellota Text", cursive;
+  color: #23211d;
+}
+
+.replenishment-registration-pa__txt {
+  margin: 0;
+}
+
+.replenishment-registration-pa__amount-txt {
+  display: block;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 700;
+  font-family: "Bellota Text", cursive;
+  color: #23211d;
+}
+
+.replenishment-registration-pa__consent {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.replenishment-registration-pa__consent-link {
+  color: @brown;
+  text-decoration: underline;
+}
+
+.replenishment-registration-pa__back-link {
+  width: 100%;
+
+  @media screen and (min-width: @medium) {
+    max-width: 48%;
+  }
+}
+
+.replenishment-registration-pa__consent-buttons-wrapper {
+  display: flex;
+  flex-direction: column-reverse;
+
+  @media screen and (min-width: @medium) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

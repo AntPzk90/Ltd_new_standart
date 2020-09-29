@@ -6597,17 +6597,20 @@ a.cargo-owner-profile__txt:active {
   color: #23211d;
 }
 .bread-crumbs--cargo-pa,
-.bread-crumbs--subscription-inner-pa {
+.bread-crumbs--subscription-inner-pa,
+.bread-crumbs--replenishment-registration-pa {
   width: 100%;
   overflow-x: scroll;
 }
 .bread-crumbs--cargo-pa .bread-crumbs__list,
-.bread-crumbs--subscription-inner-pa .bread-crumbs__list {
+.bread-crumbs--subscription-inner-pa .bread-crumbs__list,
+.bread-crumbs--replenishment-registration-pa .bread-crumbs__list {
   width: 600px;
 }
 @media screen and (min-width: 768px) {
   .bread-crumbs--cargo-pa,
-  .bread-crumbs--subscription-inner-pa {
+  .bread-crumbs--subscription-inner-pa,
+  .bread-crumbs--replenishment-registration-pa {
     overflow-x: auto;
   }
 }
@@ -9124,5 +9127,499 @@ a.cargo-owner-profile__txt:active {
     max-width: 140px;
     height: 34px;
     margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .messages-pa__wrapper-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.messages-pa__info {
+  padding-left: 10px;
+  border-bottom: 1px solid #d9d8d4;
+  background-color: #fbf9f9;
+  border-radius: 6px 6px 0 0;
+  min-height: 52px;
+}
+.messages-pa__customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+.messages-pa__customer-icon {
+  display: block;
+  margin-top: 10px;
+  border-radius: 50%;
+  border: 1px solid #c1bd98;
+}
+.messages-pa__customer-wrapper {
+  margin-left: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
+}
+.messages-pa__customer-txt {
+  font-size: 12px;
+  color: #aca9a4;
+}
+.messages-pa__customer-name {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Bellota Text", cursive;
+  line-height: 26px;
+  color: #23211d;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+.messages-pa__customer-name:hover {
+  color: #c1bd98;
+}
+.messages-pa__customer-name:active {
+  opacity: 0.8;
+}
+.messages-pa__wrapper-chat {
+  background-image: url("../img/chat-bg-mobile.png");
+  background-size: 340px 550px;
+  border: 1px solid #d9d8d4;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .messages-pa__wrapper-chat {
+    width: 488px;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    margin-bottom: 0;
+  }
+}
+.messages-pa__chat {
+  padding: 15px 10px;
+  padding-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 455px;
+  position: relative;
+}
+.messages-pa__chat-main-wrapper {
+  height: 330px;
+  overflow-y: hidden;
+}
+.messages-pa__chat-time {
+  background-color: #d4d4d4;
+  position: absolute;
+  color: #ffffff;
+  font-size: 12px;
+  padding: 2px 5px;
+  display: inline-block;
+  border-radius: 4px;
+  top: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.messages-pa__user-mess {
+  max-width: 85%;
+  width: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 40px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .messages-pa__user-mess {
+    max-width: 55%;
+  }
+}
+.messages-pa__carrier-mess {
+  max-width: 85%;
+  width: 100%;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 40px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 6px;
+  margin-left: auto;
+  margin-bottom: 15px;
+}
+@media screen and (min-width: 768px) {
+  .messages-pa__carrier-mess {
+    max-width: 55%;
+  }
+}
+.messages-pa__mess-txt {
+  margin: 0;
+}
+.messages-pa__mess-time {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+  font-size: 12px;
+  color: #aca9a4;
+}
+.messages-pa__send-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: auto;
+}
+.messages-pa__input-text {
+  height: 32px;
+  border: 1px solid #d9d8d4;
+  border-radius: 4px 0 0 4px;
+  border-right: none;
+  padding-right: 20px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.messages-pa__send-btn {
+  margin-left: -5px;
+}
+.messages-pa__wrapper-search {
+  background-color: #ffffff;
+  border: 1px solid #d9d8d4;
+  border-radius: 6px;
+}
+@media screen and (min-width: 1200px) {
+  .messages-pa__wrapper-search {
+    width: 412px;
+    border-radius: 0 6px 6px 0;
+  }
+}
+.messages-pa__search-form-wrapper {
+  background-color: #fbf9f9;
+  min-height: 63px;
+  padding: 15px;
+  border-radius: 6px 6px 0 0;
+  border-bottom: 1px solid #d9d8d4;
+}
+.messages-pa__search-form {
+  position: relative;
+}
+.messages-pa__search-input {
+  height: 32px;
+  width: 100%;
+  border: 1px solid #d9d8d4;
+  border-radius: 4px;
+  padding-right: 30px;
+  padding-left: 10px;
+}
+.messages-pa__search-btn {
+  width: 22px;
+  height: 22px;
+  padding: 5px;
+  position: absolute;
+  top: 0;
+  right: 5px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  background-image: url("../img/search-icon.png");
+  background-size: 13px 17px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border: none;
+  background-color: transparent;
+}
+.messages-pa__info--search-result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  border-bottom: none;
+  background-color: #ffffff;
+  border-radius: 0 0 6px 6px;
+  padding-top: 5px;
+}
+.messages-pa__info--search-result .messages-pa__customer {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .messages-pa__info--search-result .messages-pa__customer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+.messages-pa__info--search-result .messages-pa__customer-wrapper {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .messages-pa__info--search-result .messages-pa__customer-wrapper {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    padding-right: 20px;
+  }
+}
+.messages-pa__info--search-result .messages-pa__search-result-mess {
+  width: 100%;
+  margin-left: auto;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #d9d8d4;
+  position: relative;
+  padding-right: 50px;
+}
+.messages-pa__info--search-result .messages-pa___search-result-mess-time {
+  position: absolute;
+  bottom: 0;
+  right: 5px;
+}
+.replenishment-registration-pa__mini-title {
+  display: block;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 700;
+  font-family: "Bellota Text", cursive;
+  color: #23211d;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .replenishment-registration-pa__mini-title {
+    width: 100%;
+  }
+}
+.replenishment-registration-pa__form-label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: #aca9a4;
+}
+@media screen and (min-width: 768px) {
+  .replenishment-registration-pa__form-label {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-right: 30px;
+  }
+  .replenishment-registration-pa__form-label:last-child {
+    margin-right: 0;
+  }
+}
+.replenishment-registration-pa__form-label .replenishment-registration-pa__form-input {
+  background-color: transparent;
+  border: 1px solid #d9d8d4;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+}
+.replenishment-registration-pa__form {
+  width: 100%;
+}
+.replenishment-registration-pa__customer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+.replenishment-registration-pa__customer-icon {
+  display: block;
+  margin-top: 10px;
+}
+.replenishment-registration-pa__customer-wrapper {
+  margin-left: 10px;
+}
+.replenishment-registration-pa__customer-txt {
+  font-size: 12px;
+  color: #aca9a4;
+}
+.replenishment-registration-pa__customer-name {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 17px;
+  font-weight: bold;
+  font-family: "Bellota Text", cursive;
+  line-height: 26px;
+  color: #23211d;
+  -webkit-transition: all ease-in 0.3s;
+  transition: all ease-in 0.3s;
+}
+.replenishment-registration-pa__customer-name:hover {
+  color: #c1bd98;
+}
+.replenishment-registration-pa__customer-name:active {
+  opacity: 0.8;
+}
+.replenishment-registration-pa__wrapper-top {
+  border: 1px solid #d9d8d4;
+  border-radius: 6px;
+  padding: 15px 10px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .replenishment-registration-pa__wrapper-top {
+    padding: 20px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .replenishment-registration-pa__wrapper-top .replenishment-registration-pa__wrapper-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid #d9d8d4;
+  }
+  .replenishment-registration-pa__wrapper-top .replenishment-registration-pa__wrapper-inner:last-child {
+    border: none;
+    padding-top: 20px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+.replenishment-registration-pa__submit-btn {
+  width: 100%;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .replenishment-registration-pa__submit-btn {
+    max-width: 48%;
+    height: 34px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .replenishment-registration-pa__form-wrapper-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .replenishment-registration-pa__form-wrapper-inner:nth-child(2) {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .replenishment-registration-pa__payment-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+.replenishment-registration-pa__payment-list-item {
+  margin-bottom: 20px;
+}
+.replenishment-registration-pa__payment-list-item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .replenishment-registration-pa__payment-list-item {
+    margin-bottom: 0;
+    width: 48%;
+    min-height: 160px;
+  }
+}
+.replenishment-registration-pa__payment-info {
+  border: 1px solid #d9d8d4;
+  border-radius: 6px;
+  padding: 20px 10px;
+}
+@media screen and (min-width: 768px) {
+  .replenishment-registration-pa__payment-info {
+    height: 100%;
+  }
+}
+.replenishment-registration-pa__radio {
+  display: none;
+}
+.replenishment-registration-pa__radio:checked + .replenishment-registration-pa__payment-info {
+  border: 1px solid #c1bd98;
+}
+.replenishment-registration-pa__bold-txt {
+  display: block;
+  font-size: 17px;
+  line-height: 26px;
+  font-weight: 700;
+  font-family: "Bellota Text", cursive;
+  color: #23211d;
+}
+.replenishment-registration-pa__txt {
+  margin: 0;
+}
+.replenishment-registration-pa__amount-txt {
+  display: block;
+  font-size: 20px;
+  line-height: 29px;
+  font-weight: 700;
+  font-family: "Bellota Text", cursive;
+  color: #23211d;
+}
+.replenishment-registration-pa__consent {
+  display: block;
+  margin-bottom: 20px;
+}
+.replenishment-registration-pa__consent-link {
+  color: #c1bd98;
+  text-decoration: underline;
+}
+.replenishment-registration-pa__back-link {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .replenishment-registration-pa__back-link {
+    max-width: 48%;
+  }
+}
+.replenishment-registration-pa__consent-buttons-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+}
+@media screen and (min-width: 768px) {
+  .replenishment-registration-pa__consent-buttons-wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
   }
 }

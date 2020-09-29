@@ -132,7 +132,7 @@
         </ul>
       </nav>
       <!-- модификатор залогиненого пользователя header__user--logged -->
-      <div class="header__user">
+      <div class="header__user header__user--logged">
         <ul class="header__user-list">
           <li class="header__user-list-item">
             <a class="header__user-link btn btn--transparent">
@@ -176,67 +176,152 @@
       </button>
     </div>
   </header>
-  <main class="partners">
-    <section class="partners__main">
-      <div class="partners__main-wrapper container">
-        <div class="partners__top-wrapper">
-          <h1 class="partners__main-title big-title">Партнёры</h1>
-          <p class="partners__main-dscr">Здесь представлены компании
-            с которыми мы имеем удовольствие
-            работать долгие годы, а так же наши
-            новые друзья-партнеры.
-          </p>
+  <main class="personal-area-main">
+    <section class="personal-area">
+      <div class="personal-area__wrapper container">
+        <div class="personal-area__bread-crumbs bread-crumbs bread-crumbs--replenishment-registration-pa">
+          <ul class="bread-crumbs__list">
+            <li class="bread-crumbs__list-item">
+              <a href="index.html" class="bread-crumbs__list-link">Главная</a>
+            </li>
+            <li class="bread-crumbs__list-item">
+              <a href="index-pa.html" class="bread-crumbs__list-link">Личный кабинет</a>
+            </li>
+            <li class="bread-crumbs__list-item bread-crumbs__list-item--active">
+              <a href="replenishment-registration-pa.html" class="bread-crumbs__list-link">Пополнить баланс</a>
+            </li>
+            <li class="bread-crumbs__list-item bread-crumbs__list-item--active">
+              Оформление
+            </li>
+          </ul>
         </div>
-        <ul class="partners__list">
-          <li class="partners__list-item">
-            <a href="partners-inner.html" class="partners__title-link">
-              Carcade лизинг
-            </a>
-            <a href="#" class="partners__img-link">
-              <img src="./img/partner-logo.png" title="title" alt="title" class="partners__img">
-            </a>
-          </li>
-          <li class="partners__list-item">
-            <a href="partners-inner.html" class="partners__title-link">
-              Страхлвая компания VERNA
-            </a>
-            <a href="#" class="partners__img-link">
-              <img src="./img/verna-logo.png" title="title" alt="title" class="partners__img">
-            </a>
-          </li>
-          <li class="partners__list-item">
-            <a href="partners-inner.html" class="partners__title-link">
-              Carcade лизинг
-            </a>
-            <a href="#" class="partners__img-link">
-              <img src="./img/partner-logo.png" title="title" alt="title" class="partners__img">
-            </a>
-          </li>
-          <li class="partners__list-item">
-            <a href="partners-inner.html" class="partners__title-link">
-              Страхлвая компания VERNA
-            </a>
-            <a href="#" class="partners__img-link">
-              <img src="./img/verna-logo.png" title="title" alt="title" class="partners__img">
-            </a>
-          </li>
-          <li class="partners__list-item">
-            <a href="partners-inner.html" class="partners__title-link">
-              Carcade лизинг
-            </a>
-            <a href="#" class="partners__img-link">
-              <img src="./img/partner-logo.png" title="title" alt="title" class="partners__img">
-            </a>
-          </li>
-          <li class="partners__list-item">
-            <a href="partners-inner.html" class="partners__title-link">
-              Страхлвая компания VERNA
-            </a>
-            <a href="#" class="partners__img-link">
-              <img src="./img/verna-logo.png" title="title" alt="title" class="partners__img">
-            </a>
-          </li>
-        </ul>
+        <div class="personal-area__nav inner-navigation">
+          <div class="inner-navigation__fixed-wrapper">
+            <p class="inner-navigation__active-page">Пополнить баланс</p>
+            <a href="#" class="inner-navigation__btn"></a>
+          </div>
+          <ul class="inner-navigation__list">
+            <li class="inner-navigation__list-item">
+              <a href="index-pa.html" class="inner-navigation__list-link">Главная</a>
+            </li>
+            <li class="inner-navigation__list-item">
+              <a href="profile-pa.html" class="inner-navigation__list-link">Настройки профиля</a>
+            </li>
+            <li class="inner-navigation__list-item">
+              <a href="subscription-pa.html" class="inner-navigation__list-link">Подписки</a>
+            </li>
+            <li class="inner-navigation__list-item">
+              <a href="favorites-pa.html" class="inner-navigation__list-link">Избранное</a>
+            </li>
+            <li class="inner-navigation__list-item">
+              <a href="cargo-pa.html" class="inner-navigation__list-link">Мои грузы</a>
+            </li>
+            <li class="inner-navigation__list-item">
+              <a href="my-transport-pa.html" class="inner-navigation__list-link">Мой транспорт</a>
+            </li>
+            <li class="inner-navigation__list-item">
+              <a href="my-drivers-pa.html" class="inner-navigation__list-link">Мои водители</a>
+            </li>
+            <li class="inner-navigation__list-item">
+              <a href="delivered-pa.html" class="inner-navigation__list-link">Доставляемые грузы</a>
+            </li>
+            <li class="inner-navigation__list-item">
+              <a href="archive-cargo-pa.html" class="inner-navigation__list-link">Архив грузов</a>
+            </li>
+            <li class="inner-navigation__list-item">
+              <a href="messages-pa.html" class="inner-navigation__list-link">Сообщения</a>
+            </li>
+            <li class="inner-navigation__list-item">
+              <a href="payments-pa.html" class="inner-navigation__list-link">История платежей</a>
+            </li>
+          </ul>
+        </div>
+        <div class="personal-area__content replenishment-registration-pa">
+          <div class="replenishment-registration-pa__wrapper">
+            <h1 class="replenishment-registration-pa__title big-title">Пополнить баланс</h1>
+            <div class="replenishment-registration-pa__wrapper-top">
+              <div class="replenishment-registration-pa__wrapper-inner">
+                <div class="replenishment-registration-pa__info">
+                  <div class="replenishment-registration-pa__customer">
+                    <img src="./img/user-icon.png" height="33" width="33"
+                      class="replenishment-registration-pa__customer-icon" alt="user-icon">
+                    <div class="replenishment-registration-pa__customer-wrapper">
+                      <span class="replenishment-registration-pa__customer-txt">Перевозчик</span>
+                      <a href="cargo-owner-profile.html" class="replenishment-registration-pa__customer-name"> ООО
+                        "Транссервис
+                        Логистика"</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="replenishment-registration-pa__wrapper-inner">
+                <form class="replenishment-registration-pa__form form">
+                  <div class="replenishment-registration-pa__form-wrapper-inner">
+                    <b class="replenishment-registration-pa__mini-title">Информация о покупателе</b>
+                    <label class="replenishment-registration-pa__form-label form__label">
+                      Телефон
+                      <input type="tel" name="payment"
+                        class="replenishment-registration-pa__form-input form__text-input"
+                        placeholder="Укажите телефон">
+                    </label>
+                    <label class="replenishment-registration-pa__form-label form__label">
+                      E-mail
+                      <input type="email" name="email"
+                        class="replenishment-registration-pa__form-input form__text-input" placeholder="Укажите e-mail">
+                    </label>
+                  </div>
+                  <div class="replenishment-registration-pa__form-wrapper-inner">
+                    <b class="replenishment-registration-pa__mini-title">Выберите способ оплаты</b>
+                    <ul class="replenishment-registration-pa__payment-list">
+                      <li class="replenishment-registration-pa__payment-list-item">
+                        <label class="replenishment-registration-pa__payment-list-label">
+                          <input type="radio" name="payment" class="replenishment-registration-pa__radio">
+                          <div class="replenishment-registration-pa__payment-info">
+                            <img src="./img/logo-robokassa.png" height="32" width="275" alt="robocassa"
+                              class="replenishment-registration-pa__img">
+                            <b class="replenishment-registration-pa__bold-txt">
+                              Робокасса
+                            </b>
+                            <p class="replenishment-registration-pa__txt">
+                              Оплата картой и электронными деньгами
+                            </p>
+                          </div>
+                        </label>
+                      </li>
+                      <li class="replenishment-registration-pa__payment-list-item">
+                        <label class="replenishment-registration-pa__payment-list-label">
+                          <input type="radio" name="payment" class="replenishment-registration-pa__radio">
+                          <div class="replenishment-registration-pa__payment-info">
+                            <img src="./img/big-payment-icon.png" height="41" width="38" alt="inner-payment">
+                            <b class="replenishment-registration-pa__bold-txt">
+                              Оплатачерез банк
+                            </b>
+                            <p class="replenishment-registration-pa__txt">
+                              Пришлём вам на почту счёт для оплаты через банк
+                            </p>
+                          </div>
+                        </label>
+                      </li>
+                    </ul>
+                    <p class="replenishment-registration-pa__amount-txt">
+                      Сумма пополнения <span class="replenishment-registration-pa__amount">25 000</span> &#8381;
+                    </p>
+                  </div>
+                  <label class="replenishment-registration-pa__consent">
+                    <input type="checkbox" class="replenishment-registration-pa__consent-checkbox">
+                    Я даю <a hrfe="#" class="replenishment-registration-pa__consent-link">согласие</a> на обработку моих
+                    персональных данных
+                  </label>
+                  <div class="replenishment-registration-pa__consent-buttons-wrapper">
+                    <a hrfe="#" class="replenishment-registration-pa__back-link btn btn--transparent">Назад</a>
+                    <button type="submit"
+                      class="replenishment-registration-pa__submit-btn btn btn--brown">Пополнить баланс</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
@@ -361,7 +446,8 @@
         </ul>
         <div class="footer__telegramm">
           <a href="https://t.me/nsinfosu" class="footer__telegramm-link">
-            <img src="./img/telegram_icon.png" height="32px" width="32px" title="telegram-icon" alt="telegram-icon" class="footer__telegramm-icon">
+            <img src="./img/telegram_icon.png" height="32px" width="32px" title="telegram-icon" alt="telegram-icon"
+              class="footer__telegramm-icon">
             <span class="footer__telegramm-txt"> Напишите нам в телеграмм</span>
           </a>
         </div>
